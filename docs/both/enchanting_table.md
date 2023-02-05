@@ -12,4 +12,4 @@ To use the enchanting table immersive:
 
 3. Right click/grab the item you want. If you have enough levels and lapis lazuli, they will be removed from your inventory and XP, and you'll have the item.
 
-![](https://github.com/hammy3502/immersive-mc/raw/1.16.x/wiki/gif/ImmersiveMC%20Enchanting%20Table%20NonVR.gif)
+![](/gif/enchanting_table_nonvr.gif)

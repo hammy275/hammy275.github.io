@@ -11,3 +11,5 @@ When hovering over a beacon, you can choose between any available potions effect
 The beacon block contains a slot to place in a payment item. Once a payment item is in and the settings are valid, a checkmark will appear above the payment. Interact with that, are you're good to go!
 
 P.S. The majority of the beacon interactions will require one to press the trigger if they are in VR!
+
+![](/gif/beacon_nonvr.gif)

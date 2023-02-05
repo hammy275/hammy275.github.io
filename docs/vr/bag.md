@@ -10,4 +10,4 @@ By pressing whatever key you have mapped to "Open/Close Bag" (or by clicking the
 
 When you're done with the bag, you can follow the same steps used to open it to close it.
 
-![](https://github.com/hammy3502/immersive-mc/raw/1.16.x/wiki/gif/ImmersiveMC%20Bag%20VR.gif)
+![](/gif/bag_vr.gif)

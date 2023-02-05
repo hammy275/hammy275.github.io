@@ -23,3 +23,5 @@ Disadvantages:
 ## A Note
 
 VR users can choose to fallback to normal shield behavior by holding the "use"/"right click" key.
+
+![](/gif/shield_vr.gif)

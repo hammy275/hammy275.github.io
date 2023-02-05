@@ -16,4 +16,4 @@ By default, you can only interact with chests in VR. Move your hands at the line
 
 Once you have the chest open, you can right click/grab items or blue boxes to place items in/take items out of the chest.
 
-![Using the Chest from Outside VR](https://github.com/hammy3502/immersive-mc/raw/1.16.x/wiki/gif/ImmersiveMC%20Chest%20NonVR.gif)
+![](/gif/chest_nonvr.gif)

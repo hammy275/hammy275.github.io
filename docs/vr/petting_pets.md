@@ -8,4 +8,4 @@ If you're in VR, you can move your hand slowly on any pets you have to pet them!
 
 You can change the config option "Allow Petting Anything Living" (`can_pet_any_living` in server configs) to allow players to pet any living entity including pigs, parrots, players, pillagers, and more!
 
-![](https://github.com/hammy3502/immersive-mc/raw/1.18.x-multiloader/wiki/gif/ImmersiveMC%20Petting%20VR.gif)
+![](/gif/petting_vr.gif)
