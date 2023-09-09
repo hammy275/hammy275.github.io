@@ -1,15 +1,20 @@
 ---
-new_order: 2
+nav_order: 2
 ---
 
 # FAQ
 
 ## Tips, Tricks, and Controls
 
+### Q: How do I access the bag?
+
+A: See [Opening the Bag](/vr/bag/#opening-the-bag)
 
 ### Q: How do I access ImmersiveMC settings?
 
-A: The easiest way to access ImmersiveMC's settings is to join a world, then click the settings key for ImmersiveMC on your keyboard. By default, this is the "," (comma) key.
+A: If you're not in VR, the easiest way to access ImmersiveMC's settings is to join a world, then click the settings key for ImmersiveMC on your keyboard. By default, this is the "," (comma) key.
+
+If you're in VR, the easiest way to access ImmersiveMC's settings is to map the "ImmersiveMC Settings" button to your radial menu. You can add this button by going to Options -> VR Settings -> Radial Menu, then clicking the button you want to replace, then scrolling and clicking "ImmersiveMC Settings".  
 
 ### Q: Placing one item at a time is so slow! Can I place more than one item at a time?
 
@@ -33,6 +38,10 @@ A: No. The server must have ImmersiveMC installed.
 
 ## Help/Troubleshooting
 
+### Q: Help! I can't sneak and right-click to place blocks sometimes!
+
+A: This is an intended feature to allow users to access the UI for blocks that are supported by ImmersiveMC. You can disable this feature in ImmersiveMC's settings, by disabling "Bypass Immersion While Crouching".
+
 ### Q: Help! My bag won't open!
 
 A: If you haven't already, upgrade ImmersiveMC and mc-vr-api to the latest version that supports your version of Minecraft. From there, opening your bag should either work, or send a chat message stating why it didn't work.
@@ -48,3 +57,7 @@ A: Odds are, you may have Optifine shaders on (even just the internal ones). You
 ### Q: I can't use any of the VR interactions for ImmersiveMC, and I need to "right click" in VR to place things!
 
 A: Either you, the server, or both, don't have the required `mc-vr-api` mod installed! You can download it [here](https://www.curseforge.com/minecraft/mc-mods/mc-vr-api), making sure to install it on the server and for yourself.
+
+### Q: I'm playing with Vivecraft 1.19.2, and the game crashes due to `architectury` being out of date!
+
+A: Downgrade to an older version of Architectury. You can download it [here from Modrinth](https://modrinth.com/mod/architectury-api/version/6.2.46+forge), or [here from CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api/files/3984018).
