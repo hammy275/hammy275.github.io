@@ -8,7 +8,7 @@ nav_order: 2
 
 ### Q: How do I access the bag?
 
-A: See [Opening the Bag](/vr/bag/#opening-the-bag)
+A: See [Opening the Bag](/vr/bag#opening-the-bag)
 
 ### Q: How do I access ImmersiveMC settings?
 
