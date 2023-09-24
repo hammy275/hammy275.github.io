@@ -6,9 +6,9 @@ parent: VR Only Immersives
 
 ## Opening the Bag
 
-There are three ways to open the bag:
+There are several ways to open the bag:
 
-1. Enable the "Reach Behind Bag" feature in ImmersiveMC's Settings, then reach behind your back in-game. Note that enabling this option disables a similar feature for switching between hotbar slots in Vivecraft.
+1. Reach behind your back with your secondary hand (the hand which would normally hold shields). This gesture can be customized in ImmersiveMC's settings under "Customize Bag".
 2. Add the "Open/Close Bag" button to your Radial Menu. This can be done by going to Options -> VR Settings -> Radial Menu, then clicking the button you want to replace, then scrolling and clicking "Open/Close Bag".
 3. Add it to your SteamVR Bindings under the "Modded" tab.
 
