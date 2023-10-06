@@ -30,7 +30,7 @@ If you don't pick an option, I will assume that you would like me to ask of your
 
 ### Steps to Help With Localization
 
-1. On the Minecraft Wiki, on the [list of languages Minecraft supports](https://minecraft.fandom.com/wiki/Language), find your language. Note down its "In-game" locale code.
+1. On the Minecraft Wiki, on the [list of languages Minecraft supports](https://minecraft.wiki/w/Language), find your language. Note down its "In-game" locale code.
 2. On ImmersiveMC's GitHub page, browse to `common/src/main/resources/assets/immersivemc/lang`. [Click here](https://github.com/hammy275/immersive-mc/tree/HEAD/common/src/main/resources/assets/immersivemc/lang) if you want to be taken directly to that page.
 3. Download the `en_us.json` file. This can be done most easily by clicking the file, then clicking the button with a down arrow in it. You can additionally simply copy-paste all the text shown into a text file in your text editor of choice.
 4. Back on the page you visited in step 2, see if there is a file named `YOUR_LOCALE_CODE.json`, where `YOUR_LOCALE_CODE` is the "in-game" locale code you found in step 1. If it exists, then someone has already translated ImmersiveMC to that language, though it may be missing some strings found in ImmersiveMC, follow the [continuing a translation](#continuing-a-translation) guide below. Otherwise, someone has not translated anything in ImmersiveMC to that language; follow the [creating a translation](#creating-a-translation) guide below.
