@@ -13,3 +13,5 @@ The following items can be thrown:
 - Ender Pearl
 - Snowball
 - Trident (throws where you point)
+
+![](/gif/throwing_vr.gif)
