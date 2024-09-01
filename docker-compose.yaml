@@ -1,0 +1,21 @@
+services:
+  javadocs:
+    build:
+      context: .
+    volumes:
+      - ./build:/build
+      - ./docs:/docs-copy:ro
+    user: root
+    command: bash -c "
+      cp -r /docs-copy /docs &&
+      cd /docs &&
+      bundle install &&
+      bundle exec jekyll build &&
+      cd /immersive-mc && 
+      git pull &&
+      ./gradlew javadoc &&
+      cd / &&
+      rm -rf /build/* &&
+      cp -r /docs/_site/* /build &&
+      cp -r /immersive-mc/common/build/docs/javadoc /build/javadoc
+      "
