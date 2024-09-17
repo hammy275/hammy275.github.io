@@ -197,7 +197,7 @@
   },"28": {
     "doc": "Everything Else",
     "title": "Everything Else",
-    "content": "There’s a lot more to ImmersiveMC’s API; this is only a taste! ImmersiveMC has full Javadocs, though be warned, anything not in the com.hammy275.immersivemc.api package are internals, and can change at any time! . Some good parts of the documentation to read once you’ve made your first Immersive are: . | All the HitboxPositioningModes you can use. | Immersive and the ImmersiveInfo to go with. You can implement these interfaces yourself to create an Immersive exactly as you want. ImmersiveMC’s beacon, for example, uses this system. | The ImmersiveLogicHelpers and ImmersiveRenderHelpers to make development that much easier. | . ",
+    "content": "There’s a lot more to ImmersiveMC’s API; this is only a taste! ImmersiveMC has full Javadocs, though be warned, anything not in the com.hammy275.immersivemc.api package are internals, and can change at any time! . Some good parts of the documentation to read once you’ve made your first Immersive are: . | All the HitboxPositioningModes you can use. | Immersive and the ImmersiveInfo to go with. You can implement these interfaces yourself to create an Immersive exactly as you want. ImmersiveMC’s beacon, for example, uses this system. | The ImmersiveLogicHelpers and ImmersiveRenderHelpers to make development that much easier. | OBBFactory and the OBBs it outputs if you want rotatable hitboxes for your Immersives. | . ",
     "url": "/api/everything_else.html",
     
     "relUrl": "/api/everything_else.html"
