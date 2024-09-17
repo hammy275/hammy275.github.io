@@ -17,5 +17,7 @@ services:
       cd / &&
       rm -rf /build/* &&
       cp -r /docs/_site/* /build &&
-      cp -r /immersive-mc/common/build/docs/javadoc /build/javadoc
+      cp -r /immersive-mc/common/build/docs/javadoc /build/javadoc &&
+      touch /build/.nojekyll &&
+      rm -rf /docs
       "
