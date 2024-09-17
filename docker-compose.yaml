@@ -3,8 +3,8 @@ services:
     build:
       context: .
     volumes:
-      - ./build:/build
-      - ./docs:/docs-copy:ro
+      - ./docs:/build
+      - ./jekyll-docs:/docs-copy:ro
     user: root
     command: bash -c "
       cp -r /docs-copy /docs &&
