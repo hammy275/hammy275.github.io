@@ -14,4 +14,3 @@ From a user's perspective, this can be pretty well-defined as any individual Imm
 3. A literal implementation of the `Immersive` interface. You'll learn more about this as you go along.
 
 As you can see, the term "Immersive" isn't quite so clear-cut! You may have to infer which definition is being used from context, but to keep things clear, the ImmersiveMC API specifically allows for the implementation of block-based Immersives (2) using at least one implementation of the `Immersive` interface (3).
-
