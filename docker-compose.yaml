@@ -20,5 +20,7 @@ services:
       cp -r /immersive-mc/common/build/docs/javadoc /build/javadoc &&
       touch /build/.nojekyll &&
       echo immersivemcwiki.hammy275.com > /build/CNAME && 
-      rm -rf /docs
+      rm -rf /docs &&
+      echo Done! &&
+      exit
       "

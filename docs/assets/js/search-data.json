@@ -15,14 +15,14 @@
   },"2": {
     "doc": "Bag",
     "title": "Opening the Bag",
-    "content": "There are several ways to open the bag: . | Reach behind your back with your secondary hand (the hand which would normally hold shields). This gesture can be customized in ImmersiveMC’s settings under “Customize Bag”. | Add the “Open/Close Bag” button to your Radial Menu. This can be done by going to Options -&gt; VR Settings -&gt; Radial Menu, then clicking the button you want to replace, then scrolling and clicking “Open/Close Bag”. | Add it to your SteamVR Bindings under the “Modded” tab. | . ",
+    "content": "There are several ways to open the bag: . | Reach behind your back with your secondary hand (the hand which would normally hold shields). This gesture can be customized in ImmersiveMC’s settings under “Customize Bag”. | Add the “Open/Close Bag” button to your Radial Menu. This can be done by going to Options -&gt; VR Settings -&gt; Radial Menu, then clicking the button you want to replace, then scrolling and clicking “Open/Close Bag”. | Add it to your SteamVR Bindings under the “Modded” tab. | . When you’re done with the bag, you can follow the same steps used to open it to close it. ",
     "url": "/vr/bag.html#opening-the-bag",
     
     "relUrl": "/vr/bag.html#opening-the-bag"
   },"3": {
     "doc": "Bag",
     "title": "Using the Bag",
-    "content": "The bag represents your inventory, and also has a mini, 2x2 crafting table. You can interact with any slot you see by hovering over it, then pressing the trigger (or whatever button you use to break blocks). The bag is used to get stuff from your inventory or place things into it while the crafting table on the side can be used to craft things. The item you’re going to craft will appear above the table once you’ve put in the ingredients to make something. When you’re done with the bag, you can follow the same steps used to open it to close it. ",
+    "content": "The bag represents your inventory, and also has a mini, 2x2 crafting table for crafting. You can interact with any slot you see by hovering over it, then pressing the trigger (or whatever button you use to break blocks). If you press the same button while not pointing at anything, you will change which row of your inventory is displayed at the top of the bag. While crafting, the item you’re going to craft will appear above the table once you’ve put in the ingredients to make something, which can be grabbed the same way you place/take items. ",
     "url": "/vr/bag.html#using-the-bag",
     
     "relUrl": "/vr/bag.html#using-the-bag"
@@ -36,373 +36,422 @@
   },"5": {
     "doc": "Beacon",
     "title": "Beacon",
-    "content": "The beacon immersive allows one to set a beacon without opening the UI! . When hovering over a beacon, you can choose between any available potions effects on your left. On your right, if your beacon is tier 4, you can choose whether to also apply regeneration (the heart symbol) or to make the effect level two (the plus symbol). The beacon block contains a slot to place in a payment item. Once a payment item is in and the settings are valid, a checkmark will appear above the payment. Interact with that, are you’re good to go! . P.S. The majority of the beacon interactions will require one to press the trigger if they are in VR! . ",
+    "content": "The beacon immersive allows one to set a beacon without opening the UI! . When hovering over a beacon, you can choose between any available potions effects on your left. On your right, if your beacon is tier 4, you can choose whether to also apply regeneration (the heart symbol) or to amplify the effect (the plus symbol). The beacon block contains a slot to place in a payment item at the bottom of the block itself. ",
     "url": "/both/beacon.html",
     
     "relUrl": "/both/beacon.html"
   },"6": {
+    "doc": "Beacon",
+    "title": "Non-VR",
+    "content": "Once you’ve inserted a payment, selected an effect, and selected the regeneration or amplify option, a checkmark will appear. Once interacted with, the beacon’s new effects will take place! Note that if you’re in VR and using this mode, you’ll need to press your break block button to interact with most things. ",
+    "url": "/both/beacon.html#non-vr",
+    
+    "relUrl": "/both/beacon.html#non-vr"
+  },"7": {
+    "doc": "Beacon",
+    "title": "VR",
+    "content": "While in VR, you should insert your payment first. From there, grab your effect in one hand, and if your beacon is tier four, grab the regeneration or amplification in your other hand. Once that’s all done, place the hands holding things into the beacon, and the new effects will take place! . If you want to use the non-VR version of the beacon, simply disable “Use Grab Beacon [VR Only]” in ImmersiveMC’s settings. ",
+    "url": "/both/beacon.html#vr",
+    
+    "relUrl": "/both/beacon.html#vr"
+  },"8": {
+    "doc": "Bottles, Buckets, and Liquids",
+    "title": "Bottles, Buckets, and Liquids",
+    "content": "You can perform plenty of interactions involving buckets and bottles. | You can scoop any liquid into a bucket. Simply make a scooping motion with the bucket in the liquid. This also works at a cauldron! | You can fill a bottle with water by making a scooping motion with the bottle in a source of water. This also works at a cauldron! | You can dump the liquid in a bottle or bucket into a cauldron. Simply flip the bottle or bucket upside-down over the cauldron. | You can perform other cauldron interactions, such as removing dye from leather armor. Simply dip the item in. | . ",
+    "url": "/vr/bottles_buckets_and_liquids.html",
+    
+    "relUrl": "/vr/bottles_buckets_and_liquids.html"
+  },"9": {
     "doc": "Breeding Animals",
     "title": "Breeding Animals",
     "content": "If you hold out both hands to an animal’s mouth, with at least one hand having the item to feed the animal, you’ll feed it! . ",
     "url": "/vr/breeding_animals.html",
     
     "relUrl": "/vr/breeding_animals.html"
-  },"7": {
+  },"10": {
     "doc": "Brewing Stand",
     "title": "Brewing Stand",
     "content": "To use the brewing immersive, there are five slots, the middle-left slot, the middle slot, and the three slots on the bottom “row”. You can place/right click blaze powder into the middle-left slot, place/right click potion ingredients into the middle slot, and you can place water bottles or other potions into the bottom slots. ",
     "url": "/both/brewing_stand.html",
     
     "relUrl": "/both/brewing_stand.html"
-  },"8": {
+  },"11": {
     "doc": "The ImmersiveBuilder",
     "title": "The ImmersiveBuilder",
     "content": "Now that you’ve made an ImmersiveHandler, you’re ready to make the “client-side” part of your Immersive! Let’s learn the easy way, the ImmersiveBuilder. The ImmersiveBuilder is a quite powerful tool that handles several difficult aspects of making an Immersive and boils it down to a simple builder pattern. It may not give you the unlimited control a full Immersive implementation would, but it’s powerful enough to create nearly any item-swapping Immersive you can think of with ease! ImmersiveMC uses it for things as simple as the furnace to things as complex as the enchanting table to give you an idea of what things are possible. ",
     "url": "/api/builder.html",
     
     "relUrl": "/api/builder.html"
-  },"9": {
+  },"12": {
     "doc": "The ImmersiveBuilder",
     "title": "Relative Hitboxes",
-    "content": "The ImmersiveBuilder works off of what are called “relative hitboxes”. Relative hitboxes, unlike normal hitboxes, are defined by an offset from some position, with the offset being determined by the HitboxPositioningMode you choose for your Immersive. For example, the crafting table uses the HitboxPositioningMode.TOP_PLAYER_FACING. This means: . | All offsets originate from the top-center of the crafting table, the exact center of the middle slot on the texture. | Items will default to rendering facing the sky. | Offsets in the x direction always move right relative to the player when positive, and left when negative. For the crafting table, an offset of (0.125, 0, 0) is what ImmersiveMC uses to land exactly on the right-center square. | Offsets in the y direction always move forward when positive and backward when negative. For the crafting table, an offset of (0, -0.125, 0) is what ImmersiveMC uses to land exactly on the bottom-center square. | Offsets in the z direction always move up when positive and down when negative. ImmersiveMC uses a positive z-value to place the output of the crafting table far above the table itself. | . This is why the ImmersiveBuilder is so powerful! Leveraging relative hitboxes, you don’t need to think about actual Minecraft coordinates. Simply think in terms of offsets, and ImmersiveMC will do all the hard work! . ",
+    "content": "The ImmersiveBuilder works off of what are called “relative hitboxes”. Relative hitboxes, unlike normal hitboxes, are defined by an offset from some position, with the offset being determined by the HitboxPositioningMode you choose for your Immersive. For example, the crafting table uses HitboxPositioningMode.TOP_PLAYER_FACING. This means: . | All offsets originate from the top-center of the crafting table, the exact center of the middle slot on the texture. | Items will default to rendering facing the sky. | Offsets in the x direction always move right relative to the player when positive, and left when negative. For the crafting table, an offset of (0.125, 0, 0) is what ImmersiveMC uses to land exactly on the right-center square. | Offsets in the y direction always move forward when positive and backward when negative. For the crafting table, an offset of (0, -0.125, 0) is what ImmersiveMC uses to land exactly on the bottom-center square. | Offsets in the z direction always move up when positive and down when negative. ImmersiveMC uses a positive z-value to place the output of the crafting table far above the table itself. | . This is why the ImmersiveBuilder is so powerful! Leveraging relative hitboxes, you don’t need to think about actual Minecraft coordinates in the world. Simply think in terms of offsets, and ImmersiveMC will do all the hard work! . ",
     "url": "/api/builder.html#relative-hitboxes",
     
     "relUrl": "/api/builder.html#relative-hitboxes"
-  },"10": {
+  },"13": {
     "doc": "The ImmersiveBuilder",
-    "title": "Let’s Get Building!",
-    "content": "You’re going to want to store your Immersive in a variable somewhere, so let’s declare that and start building it. You’ll need to pass in the ImmersiveHandler you made before to get building; all Immersives need an ImmersiveHandler to function, and this is no exception! . public static final BuiltImmersive&lt;?,?&gt; myImmersive = ImmersiveBuilder.create(myHandler) . Great! Now let’s start building out our Immersive. You don’t technically need to include anything here to have a valid Immersive, but you’ll want at least some of it to have something useful: . | .setPositioningMode(HitboxPositioningMode.TOP_PLAYER_FACING): This sets our positioning mode so we place hitboxes in the same way as described for the crafting table. | .addHitbox(RelativeHitboxInfoBuilder.createItemInput(new Vec3(-0.3333, 0, 0), 0.325).build()): This makes a hitbox with size 0.325 and places it 0.3333 blocks to the left. Notice how we use createItemInput() here, as this hitbox should accept items. | .addHitbox(RelativeHitboxInfoBuilder.createItemInput(Vec3.ZERO, 0.325).build()): This makes a second input hitbox in the exact center. | .addHitbox(RelativeHitboxInfoBuilder.createItemInput(new Vec3(-0.3333, 0, 0), 0.325).build()): Lastly, a third item input hitbox. | .addHitbox(RelativeHitboxInfoBuilder.create(info -&gt; info.getItem(3).isEmpty() ? null : new Vec3(0, 0, 0.5), 0.325).holdsItems(true).triggerHitbox(true).itemSpins(true).itemRenderSizeMultiplier(1.5f).forceUpDownRenderDir(ForcedUpDownRenderDir.NULL).build()): Whew! This one is for the output of our smithing table, but there’s a lot that goes into this hitbox. Let’s break it down. | info -&gt; info.getItem(3).isEmpty() ? null : new Vec3(0, 0, 0.5): Instead of using a constant offset, we can actually use an offset calculated by code! The function accepts a BuiltImmersiveInfo instance, which, among other things, contains the items currently stored in our Immersive right now. Counting from 0, this hitbox is index 3, so we look at the item at index 3. If it’s empty, we return null, denoting that this hitbox should not exist. If there is such an item, there must be a valid output, and we declare our offset to be 0.5 blocks above the smithing table. | .holdsItems(true): Declares that this hitbox holds items. createItemInput() beforehand did this for us, but now we need to do it manually. | .triggerHitbox(true): Declares that this hitbox should require a “break block” press to be interacted with by VR users. | .itemSpins(true): Unless disabled in the player’s config, this tells ImmersiveMC to spin the item in this hitbox. | .itemRenderSizeMultiplier(1.5f): This tells ImmersiveMC to render the item at 1.5x its normal size without increasing the size of the hitbox itself. | .forceUpDownRenderDir(ForcedUpDownRenderDir.NULL): This tells ImmersiveMC to render the item without forcing it to face the sky. Our chosen HitboxPositioningMode causes items to render facing towards the sky, so this prevents it for the output. | .build(): Build our hitbox | . | .setRenderSize(0.3333f): Sets the default rendering size for all items. | .setHitboxInteractHandler((info, player, slot, hand) -&gt; { ImmersiveClientLogicHelpers.instance().sendSwapPacket(info.getBlockPosition(), slot, hand); return ClientConstants.defaultCooldownTicks; }): This tells the Immersive what to do when a player interacts with a hitbox. The body of the method simply sends a packet to the server telling it to call your ImmersiveHandler’s swap() method with the slot of the hitbox that was interacted with. | .build(): Builds our Immersive! | . And that’s it! Delcare the variable, place these all in, and you have a fully-build Immersive! If you look in ImmersiveBuilder, you’ll see there’s a lot more you can add. Anything from text to config screen information can all be added here. ",
+    "title": "Let’s Get Building",
+    "content": "You’re going to want to store your Immersive in a variable somewhere, so let’s declare that and start building it. You’ll need to pass in the ImmersiveHandler you made before to get building; all Immersives need an ImmersiveHandler to function, and this is no exception! . public static final BuiltImmersive&lt;?,?&gt; myImmersive = ImmersiveBuilder.create(myHandler) . Great! Now let’s start building out our Immersive, modeled after the Immersive for the smithing table. You don’t technically need to include anything here to have a valid Immersive, but you’ll want at least some of it to have something useful: . | .setPositioningMode(HitboxPositioningMode.TOP_PLAYER_FACING): This sets our positioning mode so we place hitboxes in the same way as described for the crafting table. | .addHitbox(RelativeHitboxInfoBuilder.createItemInput(new Vec3(-0.3333, 0, 0), 0.325).build()): This makes a hitbox with size 0.325 and places it 0.3333 blocks to the left. Notice how we use createItemInput() here, as this hitbox should accept items. | .addHitbox(RelativeHitboxInfoBuilder.createItemInput(Vec3.ZERO, 0.325).build()): This makes a second input hitbox in the exact center. | .addHitbox(RelativeHitboxInfoBuilder.createItemInput(new Vec3(-0.3333, 0, 0), 0.325).build()): Lastly, a third item input hitbox. | .addHitbox(RelativeHitboxInfoBuilder.create(info -&gt; info.getItem(3).isEmpty() ? null : new Vec3(0, 0, 0.5), 0.325).holdsItems(true).triggerHitbox(true).itemSpins(true).itemRenderSizeMultiplier(1.5f).forceUpDownRenderDir(ForcedUpDownRenderDir.NULL).build()): Whew! This one is for the output of our smithing table, but there’s a lot that goes into this hitbox. Let’s break it down. | info -&gt; info.getItem(3).isEmpty() ? null : new Vec3(0, 0, 0.5): Instead of using a constant offset, we can actually use an offset calculated by code! The function accepts a BuiltImmersiveInfo instance, which, among other things, contains the items currently stored in our Immersive right now. Counting from 0, this hitbox is index 3, so we look at the item at index 3. If it’s empty, we return null, denoting that this hitbox should not exist. If there is such an item, there must be a valid output, and we declare our offset to be 0.5 blocks above the smithing table. | .holdsItems(true): Declares that this hitbox holds items. createItemInput() beforehand did this for us, but now we need to do it manually. | .triggerHitbox(true): Declares that this hitbox should require a “break block” press to be interacted with by VR users. | .itemSpins(true): Unless disabled in the player’s config, this tells ImmersiveMC to spin the item in this hitbox. | .itemRenderSizeMultiplier(1.5f): This tells ImmersiveMC to render the item at 1.5x its normal size without increasing the size of the hitbox itself. | .forceUpDownRenderDir(ForcedUpDownRenderDir.NULL): This tells ImmersiveMC to render the item without forcing it to face the sky. Our chosen HitboxPositioningMode causes items to render facing towards the sky, so this prevents it for the output. | .build(): Build our hitbox | . | .setRenderSize(0.3333f): Sets the default rendering size for all items. | .setHitboxInteractHandler((info, player, slot, hand) -&gt; { ImmersiveClientLogicHelpers.instance().sendSwapPacket(info.getBlockPosition(), slot, hand); return ImmersiveClientConstants.instance().defaultCooldown(); }): This tells the Immersive what to do when a player interacts with a hitbox. The body of the method simply sends a packet to the server telling it to call your ImmersiveHandler’s swap() method with the slot of the hitbox that was interacted with. | .build(): Builds our Immersive! | . And that’s it! Declare the variable, place these all in, and you have a fully-build Immersive! If you look in ImmersiveBuilder, you’ll see there’s a lot more you can add. Anything from text to config screen information can all be added here. ",
     "url": "/api/builder.html#lets-get-building",
     
     "relUrl": "/api/builder.html#lets-get-building"
-  },"11": {
+  },"14": {
     "doc": "The ImmersiveBuilder",
-    "title": "Registration Time!",
-    "content": "Like with ImmersiveHandlers, you’ll need to register your newly BuiltImmersive. This should only be done on the client, and can be done by placing the following code in code that runs from your mod constructor only on your client: . ImmersiveMCClientRegistration.instance().addImmersiveRegistrationHandler(event -&gt; { event.register(myImmersive); }); . And you’re done! At this point, if you launch the game, you should have your Immersive fully working! . ",
+    "title": "Registration Time",
+    "content": "Like with ImmersiveHandlers, you’ll need to register your newly BuiltImmersive. This should only be done on the client, and can be done by placing the following code in code that runs from your mod constructor only on your client: . ImmersiveMCClientRegistration.instance().addImmersiveRegistrationHandler(event -&gt; { if (ImmersiveMCMeta.instance().compatibleWithAPIVersion(\"2.0\")) { event.register(myImmersive); } }); . Notice that we have the same version check as mentioned when we were registering our handler. And you’re done! At this point, if you launch the game, you should have your Immersive fully working! . ",
     "url": "/api/builder.html#registration-time",
     
     "relUrl": "/api/builder.html#registration-time"
-  },"12": {
+  },"15": {
     "doc": "Buttons and Levers",
     "title": "Buttons and Levers",
     "content": "You can physically push buttons to push them in-game, and you can physically move levers to move the levers in-game! Note that lever detection isn’t perfect, and it will move even if you aren’t flicking in the direction the lever should go. ",
     "url": "/vr/buttons_and_levers.html",
     
     "relUrl": "/vr/buttons_and_levers.html"
-  },"13": {
+  },"16": {
     "doc": "Campfire",
     "title": "Campfire",
     "content": "You can hold a raw food item in your hand above a campfire. It’ll start to cook, as indicated by the smoke particles that will come off of it. After 15 seconds, it will be in its cooked form! You can use both of your hands at the same time to cook with double the efficiency! . ",
     "url": "/vr/campfire.html",
     
     "relUrl": "/vr/campfire.html"
-  },"14": {
-    "doc": "Cauldron",
-    "title": "Cauldron",
-    "content": "You can interact with a cauldron using hand motions! . For buckets and glass bottles, simply make a scooping motion while holding a bucket to fill it from a cauldron, or dump the liquid into the cauldron to fill it! . For all other cauldron interactions, such as removing the dye from leather armor, simply dip the item into the cauldron. ",
-    "url": "/vr/cauldron.html",
-    
-    "relUrl": "/vr/cauldron.html"
-  },"15": {
+  },"17": {
     "doc": "Chest",
     "title": "Chest",
     "content": "Chests, trapped chests, and ender chests can all be interacted with! . ",
     "url": "/both/chest.html",
     
     "relUrl": "/both/chest.html"
-  },"16": {
+  },"18": {
     "doc": "Chest",
     "title": "Opening/Closing the Chest",
     "content": "By default, you can only interact with chests in VR. Move your hands at the line around two-thirds up the front of the chest, then make them rise quickly, as if you’re trying to flip the lid of the chest open. To close the chest, brings your arms up to be level with the top of the lid, then move your arms down, as if you were closing the lid (even if you aren’t touching it)! . If you want to use the chest outside of VR, turn on the setting Right Click Chests. Once you do so, you’ll be able to open/close the chest from outside of VR with a right click, and inside of VR by pressing whatever button you have mapped to “Use” (the button used to place blocks). ",
     "url": "/both/chest.html#openingclosing-the-chest",
     
     "relUrl": "/both/chest.html#openingclosing-the-chest"
-  },"17": {
+  },"19": {
     "doc": "Chest",
     "title": "Using the Chest",
-    "content": "Once you have the chest open, you can right click/grab items or blue boxes to place items in/take items out of the chest. ",
+    "content": "Once you have the chest open, you can right click/grab items or blue boxes to place items in/take items out of the chest. By pointing at the chest and clicking the button used to break blocks (left-click on desktop or your primary hand’s trigger button in VR by default), you will cycle which row of chest items appear on the top. ",
     "url": "/both/chest.html#using-the-chest",
     
     "relUrl": "/both/chest.html#using-the-chest"
-  },"18": {
+  },"20": {
     "doc": "Chiseled Bookshelf",
     "title": "Chiseled Bookshelf",
     "content": "Simply grab a book from a chiseled bookshelf to grab it, or place it into an empty slot to put it back on the shelf. ",
     "url": "/vr/chiseled_bookshelf.html",
     
     "relUrl": "/vr/chiseled_bookshelf.html"
-  },"19": {
+  },"21": {
     "doc": "Contributing",
     "title": "Contributing",
     "content": "Want to help with ImmersiveMC? There are plenty of ways to help! . ",
     "url": "/contributing.html",
     
     "relUrl": "/contributing.html"
-  },"20": {
+  },"22": {
     "doc": "Contributing",
     "title": "Bug Reports and Suggestions",
     "content": "If you find a bug, you can tell me about it on the ImmersiveMC Discord server! Create a new thread in either #support or #suggestions detailing the bug you found and a way to reproduce the bug. If you have an idea or suggestion for ImmersiveMC, you can tell me about it on the ImmersiveMC Discord server in the #suggestions channel! . ",
     "url": "/contributing.html#bug-reports-and-suggestions",
     
     "relUrl": "/contributing.html#bug-reports-and-suggestions"
-  },"21": {
+  },"23": {
     "doc": "Contributing",
     "title": "Localization",
     "content": "Do you speak a language that ImmersiveMC doesn’t support, and want to see it supported? If so, this is the guide for you! Simply follow the steps below! . Some Notes Before Helping With Localization . Please do keep in mind that I make money through ads run on mod distribution platforms (such as CurseForge or Modrinth) from distributing ImmersiveMC. If you do not feel comfortable contributing due to that, that is absolutely okay! . As for licensing, ImmersiveMC is, as of writing, released under the LGPL-3.0 license. This means that if anyone makes changes to ImmersiveMC and wants to release those changes, they must make those changes available under the same LGPL-3.0 license. However, ImmersiveMC has changed licenses before and may change it again (though I plan to always keep it under an OSI-approved license, keeping ImmersiveMC forever open-source). When contributing, you may: . | Give me permission to change the license in the future to an OSI-approved license without your permission at the time of change. You are free to retract this at any time. | Require me to ask your permission before making license changes. Note however, that if I do change the license, and I am unable to secure your permission, I will remove your contributions until such permission is given (if ever). | Something else. Please mention what this something else is before I accept your contribution. | . If you don’t pick an option, I will assume that you would like me to ask of your permission before switching licenses; it’s your work after all! . Steps to Help With Localization . | On the Minecraft Wiki, on the list of languages Minecraft supports, find your language. Note down its “In-game” locale code. | On ImmersiveMC’s GitHub page, browse to common/src/main/resources/assets/immersivemc/lang. Click here if you want to be taken directly to that page. | Download the en_us.json file. This can be done most easily by clicking the file, then clicking the button with a down arrow in it. You can additionally simply copy-paste all the text shown into a text file in your text editor of choice. | Back on the page you visited in step 2, see if there is a file named YOUR_LOCALE_CODE.json, where YOUR_LOCALE_CODE is the “in-game” locale code you found in step 1. If it exists, then someone has already translated ImmersiveMC to that language, though it may be missing some strings found in ImmersiveMC, follow the continuing a translation guide below. Otherwise, someone has not translated anything in ImmersiveMC to that language; follow the creating a translation guide below. | . Creating a Translation . | Continuing from step 4 above, copy-paste the downloaded en_us.json file from step 3 above, and rename it to YOUR_LOCALE_CODE.json, where YOUR_LOCALE_CODE is the “in-game” locale code you found in step 1 above. | Open the YOUR_LOCALE_CODE.json file you just renamed. You can open it in a text editor of your choice. You should see a file starting with a {, followed by a large amount of key-value pairs. These key-value pairs look something like \"key.categories.immersivemc.vr\": \"ImmersiveMC VR Bindings\". In this example, the key is \"key.categories.immersivemc.vr\", which is what is typed in the code to reference the translation. The value in this example is \"ImmersiveMC VR Bindings\", which is what is shown to the user where that key would be used. In the case of this example, the key is shown in Minecraft’s “Controls” menu, to reference the list of all controls ImmersiveMC adds to the game. | Change all the values to the translation for your language! Be sure to NOT remove any quotation marks or other punctuation. | Contribute your changes by opening a PR for them on GitHub, or sending them to the ImmersiveMC Discord server. If you send them on the Discord server, be sure to ping me (@hammy275)! | . Continuing a Translation . | Download the file for your locale code in the same way you downloaded in the en_us.json file in step 3. | Open the file you just downloaded, and open it in a text editor of your choice. You should see a file starting with a {, followed by a large amount of key-value pairs. These key-value pairs look something like \"key.categories.immersivemc.vr\": \"ImmersiveMC VR Bindings\". In this example, the key is \"key.categories.immersivemc.vr\", which is what is typed in the code to reference the translation. The value in this example is \"ImmersiveMC VR Bindings\", which is what is shown to the user where that key would be used. In the case of this example, the key is shown in Minecraft’s “Controls” menu, to reference the list of all controls ImmersiveMC adds to the game. | Open the en_us.json file you downloaded above in step 3. | Between the en_us.json file and the file for your locale, look for any keys that are in the en_us.json file that are NOT in your locale’s file. | For any keys you find in step 4 that cannot be found in your locale’s file but can be found in en_us.json, copy-past the entire line from en_us.json into your locale’s file. From there, change the value to the translation for your language. Be sure to NOT remove any quotation marks or other punctuation. | Contribute your changes by opening a PR for them on GitHub, or sending them to the ImmersiveMC Discord server. If you send them on the Discord server, be sure to ping me (@hammy275)! | . ",
     "url": "/contributing.html#localization",
     
     "relUrl": "/contributing.html#localization"
-  },"22": {
+  },"24": {
     "doc": "Crafting Table",
     "title": "Crafting Table",
     "content": " ",
     "url": "/both/crafting_table.html",
     
     "relUrl": "/both/crafting_table.html"
-  },"23": {
+  },"25": {
     "doc": "Crafting Table",
     "title": "Non-VR",
     "content": "Using the crafting table immersive is simple! Simply right click on the blue boxes above the crafting table, placing items in the same way you would your 3x3 crafting grid. From there, you can right click the floating item that appears above the crafting table to retrieve whatever you wanted to craft! If you have any items in the table that you want to take, just right-click them with an empty hand! . ",
     "url": "/both/crafting_table.html#non-vr",
     
     "relUrl": "/both/crafting_table.html#non-vr"
-  },"24": {
+  },"26": {
     "doc": "Crafting Table",
     "title": "VR",
     "content": "Using the crafting table immersive is simple! Simply place the items into the blue boxes by placing your hand in said blue boxes. Place the items in the same pattern you would for the standard crafting grid. From there, move your hand into the item that appears above the crafting table, and press the trigger (or whatever button you have mapped to “attack”) to craft that item! If you have any items in the table that you want to take, just grab them with an empty hand! . ",
     "url": "/both/crafting_table.html#vr",
     
     "relUrl": "/both/crafting_table.html#vr"
-  },"25": {
+  },"27": {
     "doc": "Doors and Gates",
     "title": "Doors and Gates",
     "content": "You can open and close fence gates and doors by making a hand motion in the fence gate or door to open them or close them! . ",
     "url": "/vr/doors_and_gates.html",
     
     "relUrl": "/vr/doors_and_gates.html"
-  },"26": {
+  },"28": {
     "doc": "Enchanting Table",
     "title": "Enchanting Table",
     "content": "To use the enchanting table immersive: . | Place your item by right clicking or physically placing your hand with the item into the blue box above an enchanting table . | If you’re out of VR, look at the three hovering items. If you’re in VR, point at the three hovering items. Each will show the amount of levels you need (the number not in parentheses), the amount of levels and lapis lazuli you’ll use (the number in parentheses), and an enchantment you’ll get. | Right click/grab the item you want. If you have enough levels and lapis lazuli, they will be removed from your inventory and XP, and you’ll have the item. | . ",
     "url": "/both/enchanting_table.html",
     
     "relUrl": "/both/enchanting_table.html"
-  },"27": {
+  },"29": {
     "doc": "Equipping Armor",
     "title": "Equipping Armor",
     "content": "By taking a piece of armor and moving it towards the corresponding part of your body, you can equip armor without having to open your inventory or push any buttons! . ",
     "url": "/vr/equipping_armor.html",
     
     "relUrl": "/vr/equipping_armor.html"
-  },"28": {
+  },"30": {
     "doc": "Everything Else",
     "title": "Everything Else",
-    "content": "There’s a lot more to ImmersiveMC’s API; this is only a taste! ImmersiveMC has full Javadocs, though be warned, anything not in the com.hammy275.immersivemc.api package are internals, and can change at any time! . Some good parts of the documentation to read once you’ve made your first Immersive are: . | All the HitboxPositioningModes you can use. | Immersive and the ImmersiveInfo to go with. You can implement these interfaces yourself to create an Immersive exactly as you want. ImmersiveMC’s beacon, for example, uses this system. | The ImmersiveLogicHelpers and ImmersiveRenderHelpers to make development that much easier. | OBBFactory and the OBBs it outputs if you want rotatable hitboxes for your Immersives. | . ",
+    "content": "There’s a lot more to ImmersiveMC’s API; this is only a taste! ImmersiveMC has full Javadocs, though be warned, anything not in the com.hammy275.immersivemc.api package are internals, and can change at any time! . Some good parts of the documentation to read once you’ve made your first Immersive are: . | All the HitboxPositioningModes you can use with your ImmersiveBuilder. | The Immersive interface and the ImmersiveInfo to go with. You can implement these interfaces yourself to create an Immersive exactly as you want with zero limitations. ImmersiveMC’s beacon, for example, uses this system to offer the relatively extreme amount of flexibility and logic the beacon’s Immersive uses. | The ImmersiveLogicHelpers and ImmersiveRenderHelpers to make development that much easier. | OBBFactory and the OBBs it outputs if you want rotatable hitboxes for your Immersives. | . ",
     "url": "/api/everything_else.html",
     
     "relUrl": "/api/everything_else.html"
-  },"29": {
+  },"31": {
     "doc": "FAQ",
     "title": "FAQ",
     "content": " ",
     "url": "/faq.html",
     
     "relUrl": "/faq.html"
-  },"30": {
+  },"32": {
     "doc": "FAQ",
     "title": "Tips, Tricks, and Controls",
-    "content": "Q: How do I access the bag? . A: See Opening the Bag . Q: How do I access ImmersiveMC settings? . A: If you’re not in VR, the easiest way to access ImmersiveMC’s settings is to join a world, then click the settings key for ImmersiveMC on your keyboard. By default, this is the “,” (comma) key. If you’re in VR, the easiest way to access ImmersiveMC’s settings is to map the “ImmersiveMC Settings” button to your radial menu. You can add this button by going to Options -&gt; VR Settings -&gt; Radial Menu, then clicking the button you want to replace, then scrolling and clicking “ImmersiveMC Settings”. Q: Placing one item at a time is so slow! Can I place more than one item at a time? . A: Yes! You can change the Placement Mode in ImmersiveMC’s settings to change the amount of items you place when interacting with immersives. Additionally, holding left-click (or whatever button you have mapped to block breaking) while placing items will place the entire stack! . ",
+    "content": "Q: How do I access the bag? . A: See Opening the Bag . Q: How do I see other items in the bag/chest/barrel/shulker box? . A: Simply press your break block button while pointing at the chest/barrel/shulker box, or press left click while pointing at nothing for the bag. Q: How do I access ImmersiveMC settings? . A: If you’re not in VR, the easiest way to access ImmersiveMC’s settings is to join a world, then click the settings key for ImmersiveMC on your keyboard. By default, this is the “,” (comma) key. If you’re in VR, the easiest way to access ImmersiveMC’s settings is to map the “ImmersiveMC Settings” button to your radial menu. You can add this button by going to Options -&gt; VR Settings -&gt; Radial Menu, then clicking the button you want to replace, then scrolling and clicking “ImmersiveMC Settings”. Q: Placing one item at a time is so slow! Can I place more than one item at a time? . A: Yes! If you hold the button used to break blocks or if you crouch while placing or taking items, you’ll take as many items as possible, as if you were shift-clicking. Any hitboxes that require you to hold your break block button to interact with, such as the output of a crafting table, will only let you crouch to perform this behavior. Furthermore, when placing items into some Immersives, you can drag between multiple slots to place items in them all at once! Hold your break block button while doing so to split the items evenly among those slots! . Q: Can I change or disable the boxes that appear where I can place items? . A: Yes! Those are called item guides, and can be customized in ImmersiveMC’s settings under “Customize Item Guides”. You can adjust their size, transparency, color, and look! You can disable them entirely by changing the “Item Guide Mode” to “No Item Guides”. ",
     "url": "/faq.html#tips-tricks-and-controls",
     
     "relUrl": "/faq.html#tips-tricks-and-controls"
-  },"31": {
+  },"33": {
     "doc": "FAQ",
     "title": "Clients and Servers",
-    "content": "Q: What happens if someone without ImmersiveMC joins a server with ImmersiveMC? . A: Those without ImmersiveMC can join servers with ImmersiveMC! However, they won’t be able to use any features included with ImmersiveMC. Q: Can I join a server without ImmersiveMC with ImmersiveMC? . A: Yes! However, you won’t be able to use any ImmersiveMC features. It would be as if you never had ImmersiveMC installed in the first place. Q: Can I use ImmersiveMC on a server without ImmersiveMC installed? On Minecraft Realms? . A: No. The server must have ImmersiveMC installed. ",
+    "content": "Q: What happens if someone without ImmersiveMC joins a server with ImmersiveMC? . A: Those without ImmersiveMC can join servers with ImmersiveMC! However, they won’t be able to use any features included with ImmersiveMC. Q: Can I join a server without ImmersiveMC with ImmersiveMC? . A: Yes! However, you won’t be able to use any ImmersiveMC features. It would be as if you never had ImmersiveMC installed in the first place. Q: Can I use ImmersiveMC on a server without ImmersiveMC installed? On Minecraft Realms? . A: No. The server must have ImmersiveMC installed. Q: I’m hosting a world via LAN or a world sharing mod. Can I disable an Immersive for myself while still letting others use it? How about disabling an Immersive for everyone? . A: Yes and yes! . If you want to disable an Immersive for yourself but allow others to use it, simply disable the Immersive in ImmersiveMC’s settings. If you want to disable an Immersive for everyone, open ImmersiveMC’s settings, then click the button labeled “Currently Adjusting: Your Config”. The button should change to mention you’re now adjusting the “Server Config”, meaning any changes you make will apply for everyone who joins you, including yourself! From here, simply disable the Immersives you don’t want anyone to use, and they’ll be disabled for everyone! . ",
     "url": "/faq.html#clients-and-servers",
     
     "relUrl": "/faq.html#clients-and-servers"
-  },"32": {
+  },"34": {
     "doc": "FAQ",
     "title": "Help/Troubleshooting",
-    "content": "Q: Help! I can’t sneak and right-click to place blocks sometimes! . A: This is an intended feature to allow users to access the UI for blocks that are supported by ImmersiveMC. You can disable this feature in ImmersiveMC’s settings, by disabling “Bypass Immersion While Crouching”. Q: Help! My bag won’t open! . A: If you haven’t already, upgrade ImmersiveMC and mc-vr-api to the latest version that supports your version of Minecraft. From there, opening your bag should either work, or send a chat message stating why it didn’t work. Q: Help! I’m using Questcraft and my game immediately crashes! . A: Please ensure you have the Fabric versions of all of ImmersiveMC’s requirements installed. Additionally, make sure you’re downloading the mods for the correct Minecraft version. Q: Help! The textures for Immersives are all weird and glitchy! . A: Odds are, you may have Optifine shaders on (even just the internal ones). You’ll need to turn those off, or switch to another shaders mod, such as Iris or Oculus. Q: I can’t use any of the VR interactions for ImmersiveMC, and I need to “right click” in VR to place things! . A: Either you, the server, or both, don’t have the required mc-vr-api mod installed! You can download it here, making sure to install it on the server and for yourself. Q: I’m playing with Vivecraft 1.19.2, and the game crashes due to architectury being out of date! . A: Downgrade to an older version of Architectury. You can download it here from Modrinth, or here from CurseForge. ",
+    "content": "Q: Help! My bag won’t open! . A: If you haven’t already, upgrade ImmersiveMC and MC VR API to the latest version that supports your version of Minecraft. From there, opening your bag should either work, or send a chat message stating why it didn’t work. Q: Help! I can’t sneak and right-click to place blocks sometimes! . A: This is an intended feature to allow users to access the UI for blocks that are supported by ImmersiveMC. You can disable this feature in ImmersiveMC’s settings, by changing the option where “Crouching Bypasses Immersive” to another option. Q: Help! My game immediately crashes when I launch it! . A: Please ensure you have the Fabric versions of all of ImmersiveMC’s requirements installed. Additionally, make sure you’re downloading the mods for the correct Minecraft version. Q: Help! The textures for Immersives are all weird and glitchy! . A: Odds are, you may have Optifine shaders on (even just the internal ones). You’ll need to turn those off, or switch to another shaders mod, such as Iris or Oculus. Q: I can’t use any of the VR interactions for ImmersiveMC, and I need to “right click” in VR to place things! . A: Either you, the server, or both, don’t have the required MC VR API mod installed! You can download it here, making sure to install it on the server and for yourself. Q: I’m playing with Vivecraft 1.19.2, and the game crashes due to architectury being out of date! . A: Downgrade to an older version of Architectury. You can download it here from Modrinth, or here from CurseForge. ",
     "url": "/faq.html#helptroubleshooting",
     
     "relUrl": "/faq.html#helptroubleshooting"
-  },"33": {
+  },"35": {
     "doc": "Fishing",
     "title": "Fishing",
     "content": "You can go fishing in VR! Simply hold the button used to break blocks while holding a fishing rod, make a throwing motion with your fishing rod, then release mid-throw to cast your line! Once a fish bites, simply yank the fishing rod up to reel something in! . ",
     "url": "/vr/fishing.html",
     
     "relUrl": "/vr/fishing.html"
-  },"34": {
+  },"36": {
     "doc": "Furnace",
     "title": "Furnace",
     "content": "To use the furnace immersive, simply right click/place the items into the two slots on the left, and your output will appear in the input on the right to be right-clicked/grabbed! . You can use this with furnaces, smokers, and blast furnaces! . ",
     "url": "/both/furnace.html",
     
     "relUrl": "/both/furnace.html"
-  },"35": {
+  },"37": {
+    "doc": "Grindstone",
+    "title": "Grindstone",
+    "content": " ",
+    "url": "/both/grindstone.html",
+    
+    "relUrl": "/both/grindstone.html"
+  },"38": {
+    "doc": "Grindstone",
+    "title": "Non-VR",
+    "content": "While outside of VR, you’ll see two slots, which represent the slots of a grindstone. Place one item in to disenchant it, or two items in to repair them! For grindstones placed on the floor, the items are placed on the top, with the output item appearing on the front, with similar locations for grindstones attached to the wall or ceiling. ",
+    "url": "/both/grindstone.html#non-vr",
+    
+    "relUrl": "/both/grindstone.html#non-vr"
+  },"39": {
+    "doc": "Grindstone",
+    "title": "VR",
+    "content": "In VR, you’ll see no item placements! Instead, drag something to disenchant across the grindstone. You’ll see some sparks as you drag, then if you do it long enough, your tool will be disenchanted! If you want to use the Non-VR mode, simply disable “Use Grinding Grindstone [VR Only]” in ImmersiveMC’s settings. ",
+    "url": "/both/grindstone.html#vr",
+    
+    "relUrl": "/both/grindstone.html#vr"
+  },"40": {
     "doc": "The ImmersiveHandler",
     "title": "The ImmersiveHandler",
     "content": "Any good block-based Immersive is divided into two portions: its ImmersiveHandler and its Immersive. The Immersive portion covers anything only performed by the client, while the ImmersiveHandler covers everything else. Since an Immersive requires an ImmersiveHandler to even be fully-built, we’ll start by making one first. ",
     "url": "/api/handler.html",
     
     "relUrl": "/api/handler.html"
-  },"36": {
+  },"41": {
     "doc": "The ImmersiveHandler",
     "title": "Making Your ImmersiveHandler",
-    "content": "Go ahead and make a new class, and have it implement the ImmersiveHandler interface. For now, make the type parameter ImmersiveMC’s NetworkStorage interface, we’ll get back to this later. At this point, your IDE should generate a lot of methods for you to complete. Let’s go over them one-by-one, then get into the finer details on some of the interfaces being used here. | makeInventoryContents(): Although the server knows of the contents of a block, such as the items in a chest, the client doesn’t know about them until they open that block’s GUI! ImmersiveMC doesn’t use GUIs however, so it needs to send the contents separately. This function is used to retrieve an object that can be encoded into a buffer to send the contents of the block to the client. | getEmptyNetworkStorage(): When the client receives the buffer, it calls this function to get a NetworkStorage instance before calling its decode() function. | swap(): All Immersive interactions happen initially on the client. When such an interaction happens, the client tells the server which slot it interacted with and at what position. This is where the server should perform the action that should take place! For example, if the user interacted with slot 0 of an empty furnace with a raw porkchop in their hand, your swap() implementation would want to move the raw porkchop into the empty furnace slot. | isDirtyForClientSync(): To prevent sending the contents of every block all the time, ImmersiveMC only sends block contents to the client on a given tick where this function returns true. | isValidBlock(): This function should simply return whether the provided block position in the given level matches this Immersive. | enabledInConfig(): This function should declare whether this Immersive is enabled in the provided player’s configuration. If you don’t have or want to provide configuration for this Immersive, simply return true here. | clientAuthoritative(): Normally, Immersives exist on the client the first time they receive inventory contents from the server. If this is true, they will instead activate the moment they can. Immersives which return true for this should always return false for isDirtyForClientSync(). If this is your first Immersive, simply return false from here, you’re still learning! | getID(): An ID that uniquely identifies your Immersive. Make sure to keep it in your mod’s namespace! | onStopTracking() (optional): This function gets called on the server-side when an Immersive stops being tracked. You don’t need to implement this, but you may find it useful for your Immersive! | . That was a lot! Even worse, looking in your IDE, you’ll notice that some of these methods use even more interfaces from ImmersiveMC! Let’s break those down real quick: . | Interface Name | Methods That Use It | What It Is | . | NetworkStorage | makeInventoryContents() and getEmptyNetworkStorage() | This object should hold all the data that needs to sync from the server to the client. encode() should place the data into a byte buffer, while decode() should turn an instance of this object created from getEmptyNetworkStorage() into the same data that you had on the server, but now on the client!You should make an implementation of this function, update the type parameter for your ImmersiveHandler to that type, then update the method accordingly.Need an example? Take a look at ImmersiveMC’s internal ListOfItemsStorage. | . | ItemSwapAmount | swap() | Users can configure the amount of items to swap and can hold their “break block” button to swap an entire stack of items. This object encapsulates that information; simply call ItemSwapAmount#getNumItemsToSwap() with the stack size of the item in the player’s hand, or pass it to ImmersiveLogicHelpers#swapItems() and let it do the work! | . Want an example? Take a look at ImmersiveMC’s BrewingStandHandler in your IDE! . ",
+    "content": "Go ahead and make a new class, and have it implement the ImmersiveHandler interface. For now, make the type parameter ImmersiveMC’s NetworkStorage interface, we’ll get back to this later. At this point, your IDE should generate a lot of methods for you to complete. Let’s go over them one-by-one, then get into the finer details on some of the interfaces being used here. | makeInventoryContents(): Although the server knows of the contents of a block, such as the items in a chest, the client doesn’t know about them until they open that block’s GUI! ImmersiveMC doesn’t use GUIs however, so it needs to send the contents separately. This function is used to retrieve an object that can be encoded into a buffer to send the contents of the block to the client. | getEmptyNetworkStorage(): When the client receives the buffer, it calls this function to get a NetworkStorage instance before calling its decode() function. | swap(): All Immersive interactions happen initially on the client. When such an interaction happens, the client tells the server which slot it interacted with and at what position. This is where the server should perform the action that should take place! For example, if the user interacted with slot 0 of an empty furnace with a raw porkchop in their hand, your swap() implementation would want to move the raw porkchop into the empty furnace slot. | isDirtyForClientSync(): To prevent sending the contents of every block all the time, ImmersiveMC only sends block contents to the client on a given tick where this function returns true. | isValidBlock(): This function should simply return whether the provided block position in the given level matches this Immersive. | enabledInConfig(): This function should declare whether this Immersive is enabled in the provided player’s configuration. If you don’t have or want to provide configuration for this Immersive, simply return true here. | clientAuthoritative(): Normally, Immersives exist on the client the first time they receive inventory contents from the server. If this is true, they will instead activate the moment they can. Immersives which return true for this should always return false for isDirtyForClientSync(). If this is your first Immersive, simply return false from here, you’re still learning! | getID(): An ID that uniquely identifies your Immersive. Make sure to keep it in your mod’s namespace! | onStopTracking() (optional): This function gets called on the server-side when an Immersive stops being tracked. You don’t need to implement this, but you may find it useful for your Immersive! | . That was a lot! Even worse, looking in your IDE, you’ll notice that some of these methods use even more interfaces from ImmersiveMC! Let’s break those down real quick: . | Interface Name | Methods That Use It | What It Is | . | NetworkStorage | makeInventoryContents() and getEmptyNetworkStorage() | This object should hold all the data that needs to sync from the server to the client. encode() should place the data into a byte buffer, while decode() should turn an instance of this object created from getEmptyNetworkStorage() into the same data that you had on the server, but now on the client!You should make an implementation of this function, update the type parameter for your ImmersiveHandler to that type, then update the method accordingly.Need an example? Take a look at ImmersiveMC’s internal ListOfItemsStorage. | . | ItemSwapAmount | swap() | Users can configure the amount of items to swap and can hold their “break block” button to swap an entire stack of items. This object encapsulates that information; simply call ItemSwapAmount#getNumItemsToSwap() with the stack size of the item in the player’s hand, or pass it to ImmersiveLogicHelpers#swapItems() and let it do the work! | . Now that you have an idea of everything that goes into an ImmersiveHandler, implement the provided methods for your Immersive! Want an example? Take a look at ImmersiveMC’s BrewingStandHandler in your IDE! It’s one of the simplest ImmersiveHandlers in ImemrsiveMC’s codebase. ",
     "url": "/api/handler.html#making-your-immersivehandler",
     
     "relUrl": "/api/handler.html#making-your-immersivehandler"
-  },"37": {
+  },"42": {
     "doc": "The ImmersiveHandler",
     "title": "Registering Your ImmersiveHandler",
-    "content": "This one’s easy! First, make an instance of your ImmersiveHandler somewhere, you’ll need it! . public static final ImmersiveHandler&lt;NetworkStorage&gt; myHandler = new MyHandler(); . Then, in your mod’s constructor, let ImmersiveMC know that when it comes time to register, register it! . ImmersiveMCRegistration.instance().addImmersiveHandlerRegistrationHandler(event -&gt; { event.register(myHandler); }); . Congratulations! You’re ImmersiveHandler is done! . ",
+    "content": "This one’s easy! First, make an instance of your ImmersiveHandler somewhere, you’ll need it! . public static final ImmersiveHandler&lt;NetworkStorage&gt; myHandler = new MyHandler(); . Then, in your mod’s constructor, let ImmersiveMC know that when it comes time to register, register it! Note that we first check if the current version of ImmersiveMC is compatible with API version 2.0, the API version for ImmersiveMC 1.5.0. Otherwise, we may use a feature that ImmersiveMC no longer has, thus causing a crash or other issue! . ImmersiveMCRegistration.instance().addImmersiveHandlerRegistrationHandler(event -&gt; { if (ImmersiveMCMeta.instance().compatibleWithAPIVersion(\"2.0\")) { event.register(myHandler); } }); . Congratulations! Your ImmersiveHandler is done! . ",
     "url": "/api/handler.html#registering-your-immersivehandler",
     
     "relUrl": "/api/handler.html#registering-your-immersivehandler"
-  },"38": {
+  },"43": {
     "doc": "Hopper",
     "title": "Hopper",
     "content": "The hopper immersive is really simple to use! Simply right-click on an item guide (the by-default blue boxes) to place items in, and right-click again to take items out! . ",
     "url": "/both/hopper.html",
     
     "relUrl": "/both/hopper.html"
-  },"39": {
+  },"44": {
     "doc": "Immersives",
     "title": "Immersives",
     "content": "These immersives can be used by anyone, whether in VR or not! When interacting with immersives, you’ll right-click if you’re out of VR, or if you’re in VR, you’ll physically place the item into the immersive. ",
     "url": "/both/",
     
     "relUrl": "/both/"
-  },"40": {
+  },"45": {
     "doc": "VR Only Immersives",
     "title": "VR Only Immersives",
     "content": "These immersives can only be used in VR! . ",
     "url": "/vr/",
     
     "relUrl": "/vr/"
-  },"41": {
+  },"46": {
     "doc": "The ImmersiveMC API",
     "title": "The ImmersiveMC API",
     "content": "Starting with ImmersiveMC 1.5.0 Beta 2, ImmersiveMC comes with a fully-featured API to make programming your own block-based Immersives as easy as possible! . ",
     "url": "/api/",
     
     "relUrl": "/api/"
-  },"42": {
+  },"47": {
     "doc": "The ImmersiveMC API",
     "title": "Warning",
-    "content": "Until ImmersiveMC 1.5.0’s full release, the API is in beta, and may have breaking changes at any time! The tutorials here should mostly remain unchanged, but that is not guaranteed, and it is guaranteed that other things will be changed before ImmersiveMC 1.5.0’s release! . ",
+    "content": "Due to ImmersiveMC being a mod that has constantly evolving features and VR requirements, the API will likely change as ImmersiveMC changes. This documentation should remain up-to-date to match the latest version of the API, however you may need to adjust your code as these updates happen to ensure your ImmersiveMC integration does not cause a crash with incompatible versions. This guide will cover how to do so. ",
     "url": "/api/#warning",
     
     "relUrl": "/api/#warning"
-  },"43": {
+  },"48": {
     "doc": "The ImmersiveMC API",
     "title": "Getting Started",
     "content": "The pages on the left-hand side are ordered in such a way for you to learn how to make block-based Immersives using ImmersiveMC’s API. Before then, though, you’ll need to add ImmersiveMC to your project! . Setup . Loom (Fabric and Architectury) . | Add the following to your build.gradle file. For Architectury, this should be done for all of your subprojects: repositories { maven { url = \"https://cursemaven.com\" } } . | Add the following to the dependencies section of your build.gradle. FILE_ID should be replaced with the file ID of the ImmersiveMC version you depend on. The FILE_ID can be found by visiting the “Files” tab of ImmersiveMC’s CurseForge page, clicking the file you want, then copying the numbers at the end of the URL. As with step 1, if you’re using an Architectury project, this should be done for all of your subprojects, using the Fabric version of ImmersiveMC for your common subproject: modApi \"curse.maven:immersivemc-607017:FILE_ID\" . | Refresh gradle, then you’ll be good to go! | . NeoForge and Forge . | Add the following to your build.gradle file. repositories { maven { url = \"https://cursemaven.com\" } } . | Add the following to the dependencies section of your build.gradle. FILE_ID should be replaced with the file ID of the ImmersiveMC version you depend on. The FILE_ID can be found by visiting the “Files” tab of ImmersiveMC’s CurseForge page, clicking the file you want, then copying the numbers at the end of the URL. compileOnly fg.deobf(\"curse.maven:mcvrapi-591092:FILE_ID\") runtimeOnly fg.deobf(\"curse.maven:mcvrapi-591092:FILE_ID\") . | Refresh gradle, then you’ll be good to go! | . ",
     "url": "/api/#getting-started",
     
     "relUrl": "/api/#getting-started"
-  },"44": {
+  },"49": {
     "doc": "ImmersiveMC Wiki",
     "title": "ImmersiveMC Wiki",
     "content": "Welcome to the wiki for ImmersiveMC! . This wiki has guides, tutorials, FAQs, and more! Before you get started, you’ll want to familiarize yourself with what we call an Immersive. Long story short, an Immersive is the single block/entity/whatever else that ImmersiveMC adds to make something more immersive. For example, the support for the crafting table by ImmerisveMC is called the Crafting Table Immersive. That aside, take a look on the right hand side, and pick an entry to start browsing! . ",
     "url": "/",
     
     "relUrl": "/"
-  },"45": {
+  },"50": {
     "doc": "Jukebox",
     "title": "Jukebox",
     "content": "When you’re holding a disc in your hand, you can place the disc into the slot of a jukebox, and the jukebox will accept the disc and play music! To get this disc out, you’ll need to use whatever button you use to place blocks, and a jukebox will not accept a disc if there already is one inside. ",
     "url": "/vr/jukebox.html",
     
     "relUrl": "/vr/jukebox.html"
-  },"46": {
+  },"51": {
+    "doc": "Lectern and Written Book",
+    "title": "Lectern and Written Book",
+    "content": "ImmersiveMC supports showing the contents of a book placed in a lectern and the contents of a held book! . ",
+    "url": "/both/lectern_and_written_book.html",
+    
+    "relUrl": "/both/lectern_and_written_book.html"
+  },"52": {
+    "doc": "Lectern and Written Book",
+    "title": "Lectern",
+    "content": "If a book is placed in a lectern, you’re able to read its contents in-world! You can flip between pages by right-clicking the edges of the book out of VR, or by physically turning the page from one edge to the other in VR. The page you’re on will sync between players, so feel free to read together if you want! . If the book has any clickable elements, you can right-click them out of VR or hover your hand over the text and press your break block button to click the text. ",
+    "url": "/both/lectern_and_written_book.html#lectern",
+    
+    "relUrl": "/both/lectern_and_written_book.html#lectern"
+  },"53": {
+    "doc": "Lectern and Written Book",
+    "title": "Written Book",
+    "content": "If you’re in VR, you can also hold a book in your hand to read its contents. You flip pages and interact with interactable text the same way you would with a lectern. ",
+    "url": "/both/lectern_and_written_book.html#written-book",
+    
+    "relUrl": "/both/lectern_and_written_book.html#written-book"
+  },"54": {
     "doc": "Petting Pets",
     "title": "Petting Pets",
-    "content": "If you’re in VR, you can move your hand slowly on any pets you have to pet them! By default, you can pet any animals you have tamed towards yourself or any horses, donkeys, mules, etc. that have been tamed by a player. You can change the config option “Allow Petting Anything Living” (can_pet_any_living in server configs) to allow players to pet any living entity including pigs, parrots, players, pillagers, and more! . ",
+    "content": "If you’re in VR, you can move your hand slowly on any pets you have to pet them! By default, you can pet any animals you have tamed towards yourself or any horses, donkeys, mules, etc. that have been tamed by a player. Petting is purely a cosmetic action, with no in-game benefits. You can change the config option “Allow Petting Anything Living” (allowPettingAnythingLiving in server configs) to allow players to pet any living entity including pigs, parrots, players, pillagers, and more! . ",
     "url": "/vr/petting_pets.html",
     
     "relUrl": "/vr/petting_pets.html"
-  },"47": {
+  },"55": {
     "doc": "Ranged Grab",
     "title": "Ranged Grab",
     "content": "Whenever you point at an item while in VR using ImmersiveMC, it should give off blue particles. When it’s doing so, if you hold down your trigger (or whatever button you use to break blocks) then flick your controller up while still holding the trigger, the item will fly towards you! This makes grabbing items at range a breeze! . ",
     "url": "/vr/ranged_grab.html",
     
     "relUrl": "/vr/ranged_grab.html"
-  },"48": {
+  },"56": {
     "doc": "Repeater",
     "title": "Repeater",
     "content": "You can adjust the torches of a redstone repeater by physically moving the torches around! Move your hand to where the back torch currently is, then move your hand to the spot you want the torch to go! . ",
     "url": "/vr/repeater.html",
     
     "relUrl": "/vr/repeater.html"
-  },"49": {
+  },"57": {
     "doc": "Shields",
     "title": "Shields",
     "content": " ",
     "url": "/vr/shields.html",
     
     "relUrl": "/vr/shields.html"
-  },"50": {
+  },"58": {
     "doc": "Shields",
     "title": "How to Use It",
     "content": "VR players can block using shields without having to hold down the “use”/”right click” key! When using a shield like this, shields cover 60 degrees in each direction from the forward pointing direction of the shield. Additionally, shields have a hitbox, which can be used to deflect projectiles before they reach the player! . ",
     "url": "/vr/shields.html#how-to-use-it",
     
     "relUrl": "/vr/shields.html#how-to-use-it"
-  },"51": {
+  },"59": {
     "doc": "Shields",
     "title": "In Comparison",
     "content": "In comparison to regular shields (or shields being used by non-VR users), using shields in this way have the following advantages and disadvantages: . Advantages: . | You can dual-wield shields, giving you more coverage than the one shield provided in Vanilla. | VR users won’t slow down while blocking with shields. | . Disadvantages: . | VR users using 1 shield block less, only covering 60 degrees in each direction, rather than the 90 degrees that is provided to Vanilla players. | . ",
     "url": "/vr/shields.html#in-comparison",
     
     "relUrl": "/vr/shields.html#in-comparison"
-  },"52": {
+  },"60": {
     "doc": "Shields",
     "title": "A Note",
     "content": "VR users can choose to fallback to normal shield behavior by holding the “use”/”right click” key. ",
     "url": "/vr/shields.html#a-note",
     
     "relUrl": "/vr/shields.html#a-note"
-  },"53": {
+  },"61": {
     "doc": "Shulker Box",
     "title": "Shulker Box",
-    "content": "You can right click Shulker Boxes to open them without a GUI, and right click again to close them. They work similarly to chests, right clicking an item will stack the item or swap it with the one in your hand. Right clicking an empty space will put the item you’re holding into that slot. Additionally, you can punch to swap to the next row of slots, allowing you to interact with all 3 rows of your Shulker Boxes! . ",
+    "content": "You can right click Shulker Boxes to open them without a GUI, and right click again to close them. They work similarly to chests, right clicking an item will stack the item or swap it with the one in your hand. Right clicking an empty space will put the item you’re holding into that slot. Additionally, you can punch to swap to the next row of slots, allowing you to interact with all 3 rows of your Shulker Boxes. ",
     "url": "/both/shulker_box.html",
     
     "relUrl": "/both/shulker_box.html"
-  },"54": {
+  },"62": {
     "doc": "Smithing Table",
     "title": "Smithing Table",
     "content": "Place your template in the left blue box, your tool, armor, or other “main” item in the middle blue box, and your material in the right blue box, by right-clicking/physically placing the item. An item should then appear above the smithing table if the three items you placed would create something (a netherite template + a diamond sword + a netherite ingot would create a netherite sword, for example). Simply right-click the item, or place your hand inside the item and press your “break block” button in VR, and you’ll grab the item! . ",
     "url": "/both/smithing_table.html",
     
     "relUrl": "/both/smithing_table.html"
-  },"55": {
+  },"63": {
     "doc": "Throwing",
     "title": "Throwing",
     "content": "You can throw things! Simply hold the button you use to break blocks while holding something you can throw, then release it as you move your hand to throw the item! The item will go farther depending on how hard you throw and it will go the direction you move your hand! . The following items can be thrown: . | Bottle o’ Enchanting | Egg | Ender Pearl | Snowball | Trident (throws where you point) | . ",
     "url": "/vr/throwing.html",
     
     "relUrl": "/vr/throwing.html"
-  },"56": {
+  },"64": {
     "doc": "What is an Immersive?",
     "title": "What is an Immersive?",
     "content": "Before we jump into writing some code, it’s important to cover a seemingly obvious question. What is an Immersive? . From a user’s perspective, this can be pretty well-defined as any individual ImmersiveMC feature that can be enabled or disabled. However, once you start working with ImmersiveMC’s codebase in any way, you’ll come to realize there are a few definitions for the word “Immersive” that are used interchangeably: . | The aforementioned user-definition of an Immersive. | The aforementioned user-definition of an Immersive, but only for ones that are tied to blocks. This is also called a “block-based Immersive”. Something like the furnace’s Immersive falls under this definition, while the ranged grab Immersive does not. | A literal implementation of the Immersive interface. You’ll learn more about this as you go along. | . As you can see, the term “Immersive” isn’t quite so clear-cut! You may have to infer which definition is being used from context, but to keep things clear, the ImmersiveMC API specifically allows for the implementation of block-based Immersives (2) using at least one implementation of the Immersive interface (3). ",
     "url": "/api/what_is_an_immersive.html",
     
     "relUrl": "/api/what_is_an_immersive.html"
-  },"57": {
-    "doc": "Written Book",
-    "title": "Written Book",
-    "content": "You can hold a written book to read its contents! You can flip between pages by putting your other hand at the edge of a page, then moving your hand towards the center of the book, as if you were turning the page. It’s easier if you grab the page by the corner when turning this way. For books that can be interacted with, such as ones generated with commands, you can interact by hovering your other hand over the text you want to interact with, then pressing the button that you have mapped to breaking blocks. Note that this may not be the same hand you’re using to hover over the text in the first place! . ",
-    "url": "/vr/written_book.html",
-    
-    "relUrl": "/vr/written_book.html"
   }
 }
