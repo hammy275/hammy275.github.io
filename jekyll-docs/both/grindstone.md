@@ -13,3 +13,5 @@ While outside of VR, you'll see two slots, which represent the slots of a grinds
 ## VR
 
 In VR, you'll see no item placements! Instead, drag something to disenchant across the grindstone. You'll see some sparks as you drag, then if you do it long enough, your tool will be disenchanted! If you want to use the Non-VR mode, simply disable "Use Grinding Grindstone [VR Only]" in ImmersiveMC's settings.
+
+![](/gif/grindstone_vr.gif)

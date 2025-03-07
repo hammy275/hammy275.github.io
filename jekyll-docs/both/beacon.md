@@ -21,3 +21,5 @@ Once you've inserted a payment, selected an effect, and selected the regeneratio
 While in VR, you should insert your payment first. From there, grab your effect in one hand, and if your beacon is tier four, grab the regeneration or amplification in your other hand. Once that's all done, place the hands holding things into the beacon, and the new effects will take place!
 
 If you want to use the non-VR version of the beacon, simply disable "Use Grab Beacon [VR Only]" in ImmersiveMC's settings.
+
+![](/gif/beacon_vr.gif)
