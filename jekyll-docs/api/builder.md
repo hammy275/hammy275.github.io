@@ -42,7 +42,7 @@ Great! Now let's start building out our Immersive, modeled after the Immersive f
 - `.setRenderSize(0.3333f)`: Sets the default rendering size for all items.
 - `.setHitboxInteractHandler((info, player, slot, hand) -> {
         ImmersiveClientLogicHelpers.instance().sendSwapPacket(info.getBlockPosition(), slot, hand);
-        return ClientConstants.defaultCooldownTicks;
+        return ImmersiveClientConstants.instance().defaultCooldown();
     })`: This tells the Immersive what to do when a player interacts with a hitbox. The body of the method simply sends a packet to the server telling it to call your `ImmersiveHandler`'s `swap()` method with the slot of the hitbox that was interacted with.
 - `.build()`: Builds our Immersive!
 
