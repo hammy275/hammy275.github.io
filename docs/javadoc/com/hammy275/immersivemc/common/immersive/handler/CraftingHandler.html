@@ -118,7 +118,7 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -139,30 +139,33 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a><wbr>&lt;? extends <a href="../../../server/storage/world/WorldStorage.html" title="interface in com.hammy275.immersivemc.server.storage.world">WorldStorage</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getWorldStorageClass()" class="member-name-link">getWorldStorageClass</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isValidBlock(net.minecraft.core.BlockPos,net.minecraft.world.level.Level)" class="member-name-link">isValidBlock</a><wbr>(net.minecraft.core.BlockPos&nbsp;pos,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isCraftingTableBlock(net.minecraft.world.level.block.Block)" class="member-name-link">isCraftingTableBlock</a><wbr>(net.minecraft.world.level.block.Block&nbsp;block)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isValidBlock(net.minecraft.core.BlockPos,net.minecraft.world.level.Level)" class="member-name-link">isValidBlock</a><wbr>(net.minecraft.core.BlockPos&nbsp;pos,
  net.minecraft.world.level.Level&nbsp;level)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../storage/dual/impl/CraftingTableStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.dual.impl">CraftingTableStorage</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeInventoryContents(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos)" class="member-name-link">makeInventoryContents</a><wbr>(net.minecraft.server.level.ServerPlayer&nbsp;player,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../storage/dual/impl/CraftingTableStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.dual.impl">CraftingTableStorage</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeInventoryContents(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos)" class="member-name-link">makeInventoryContents</a><wbr>(net.minecraft.server.level.ServerPlayer&nbsp;player,
  net.minecraft.core.BlockPos&nbsp;pos)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Creates inventory contents on the server to send to clients.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#swap(int,net.minecraft.world.InteractionHand,net.minecraft.core.BlockPos,net.minecraft.server.level.ServerPlayer,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount)" class="member-name-link">swap</a><wbr>(int&nbsp;slot,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#swap(int,net.minecraft.world.InteractionHand,net.minecraft.core.BlockPos,net.minecraft.server.level.ServerPlayer,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount)" class="member-name-link">swap</a><wbr>(int&nbsp;slot,
  net.minecraft.world.InteractionHand&nbsp;hand,
  net.minecraft.core.BlockPos&nbsp;pos,
  net.minecraft.server.level.ServerPlayer&nbsp;player,
  <a href="../../../server/storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;amount)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Swaps an item from a player's hand into this immersive (and/or vice-versa).</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateStorageOutputAfterItemReturn(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos,com.hammy275.immersivemc.common.immersive.storage.dual.impl.ItemStorage)" class="member-name-link">updateStorageOutputAfterItemReturn</a><wbr>(net.minecraft.server.level.ServerPlayer&nbsp;player,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateStorageOutputAfterItemReturn(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos,com.hammy275.immersivemc.common.immersive.storage.dual.impl.ItemStorage)" class="member-name-link">updateStorageOutputAfterItemReturn</a><wbr>(net.minecraft.server.level.ServerPlayer&nbsp;player,
  net.minecraft.core.BlockPos&nbsp;pos,
  <a href="../storage/dual/impl/ItemStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.dual.impl">ItemStorage</a>&nbsp;storage)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -316,6 +319,12 @@ loadScripts(document, 'script');</script>
 <dt>Overrides:</dt>
 <dd><code><a href="ItemWorldStorageHandler.html#updateStorageOutputAfterItemReturn(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos,com.hammy275.immersivemc.common.immersive.storage.dual.impl.ItemStorage)">updateStorageOutputAfterItemReturn</a></code>&nbsp;in class&nbsp;<code><a href="ItemWorldStorageHandler.html" title="class in com.hammy275.immersivemc.common.immersive.handler">ItemWorldStorageHandler</a>&lt;<a href="../storage/dual/impl/CraftingTableStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.dual.impl">CraftingTableStorage</a>&gt;</code></dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isCraftingTableBlock(net.minecraft.world.level.block.Block)">
+<h3>isCraftingTableBlock</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isCraftingTableBlock</span><wbr><span class="parameters">(net.minecraft.world.level.block.Block&nbsp;block)</span></div>
 </section>
 </li>
 </ul>
