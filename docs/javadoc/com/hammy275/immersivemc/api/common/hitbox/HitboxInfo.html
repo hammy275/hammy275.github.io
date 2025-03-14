@@ -92,9 +92,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">HitboxInfo</span></div>
 <div class="block">An object representing one hitbox for an <a href="../../client/immersive/Immersive.html" title="interface in com.hammy275.immersivemc.api.client.immersive"><code>Immersive</code></a>. You
- may obtain instances of this interface using <a href="HitboxInfoFactory.html" title="interface in com.hammy275.immersivemc.api.common.hitbox"><code>HitboxInfoFactory</code></a>. You could also implement this yourself,
- but that is NOT covered under the API, so API changes may result in your implementations of this interface breaking
- without warning.</div>
+ may obtain instances of this interface using <a href="HitboxInfoFactory.html" title="interface in com.hammy275.immersivemc.api.common.hitbox"><code>HitboxInfoFactory</code></a>, though if your hitbox moves, you'll
+ likely want to create an implementation of this yourself so you can properly implement
+ <a href="#getRenderHitbox(float)"><code>getRenderHitbox(float)</code></a>. Although not in the API,
+ <a href="../../../client/immersive/info/HitboxItemPair.html" title="class in com.hammy275.immersivemc.client.immersive.info"><code>HitboxItemPair</code></a> is a good example of an implementation of
+ this interface.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
