@@ -4,15 +4,16 @@ com.hammy275.immersivemc.api.client.immersive
 com.hammy275.immersivemc.api.common
 com.hammy275.immersivemc.api.common.hitbox
 com.hammy275.immersivemc.api.common.immersive
-com.hammy275.immersivemc.api.server
 com.hammy275.immersivemc.client
 com.hammy275.immersivemc.client.api_impl
 com.hammy275.immersivemc.client.compat
+com.hammy275.immersivemc.client.compat.ipn
 com.hammy275.immersivemc.client.config
 com.hammy275.immersivemc.client.config.screen
 com.hammy275.immersivemc.client.immersive
 com.hammy275.immersivemc.client.immersive_item
 com.hammy275.immersivemc.client.immersive_item.info
+com.hammy275.immersivemc.client.immersive.book
 com.hammy275.immersivemc.client.immersive.info
 com.hammy275.immersivemc.client.model
 com.hammy275.immersivemc.client.subscribe
@@ -23,6 +24,7 @@ com.hammy275.immersivemc.client.workaround
 com.hammy275.immersivemc.common.api_impl
 com.hammy275.immersivemc.common.api_impl.hitbox
 com.hammy275.immersivemc.common.compat
+com.hammy275.immersivemc.common.compat.apotheosis
 com.hammy275.immersivemc.common.compat.lootr
 com.hammy275.immersivemc.common.compat.util
 com.hammy275.immersivemc.common.config
@@ -43,8 +45,10 @@ com.hammy275.immersivemc.mixin.throw_redirectors
 com.hammy275.immersivemc.mixin.throw_render_helpers.vivecraft
 com.hammy275.immersivemc.server
 com.hammy275.immersivemc.server.api_impl
+com.hammy275.immersivemc.server.command
 com.hammy275.immersivemc.server.data
 com.hammy275.immersivemc.server.immersive
+com.hammy275.immersivemc.server.storage.server
 com.hammy275.immersivemc.server.storage.world
 com.hammy275.immersivemc.server.storage.world.impl
 com.hammy275.immersivemc.server.swap

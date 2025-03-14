@@ -1,6 +1,6 @@
 ---
 has_children: true
-nav_order: 6
+nav_order: 7
 ---
 
 # The ImmersiveMC API
@@ -9,7 +9,7 @@ Starting with ImmersiveMC 1.5.0 Beta 2, ImmersiveMC comes with a fully-featured 
 
 ## Warning
 
-Until ImmersiveMC 1.5.0's full release, the API is in beta, and may have breaking changes at any time! The tutorials here should mostly remain unchanged, but that is not guaranteed, and it *is* guaranteed that other things will be changed before ImmersiveMC 1.5.0's release!
+Due to ImmersiveMC being a mod that has constantly evolving features and VR requirements, the API will likely change as ImmersiveMC changes. This documentation should remain up-to-date to match the latest version of the API, however you may need to adjust your code as these updates happen to ensure your ImmersiveMC integration does not cause a crash with incompatible versions. This guide will cover how to do so.
 
 ## Getting Started
 

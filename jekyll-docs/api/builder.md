@@ -9,23 +9,23 @@ Now that you've made an `ImmersiveHandler`, you're ready to make the "client-sid
 
 ## Relative Hitboxes
 
-The `ImmersiveBuilder` works off of what are called "relative hitboxes". Relative hitboxes, unlike normal hitboxes, are defined by an offset from some position, with the offset being determined by the [`HitboxPositioningMode`](/javadoc/com/hammy275/immersivemc/api/client/immersive/HitboxPositioningMode.html) you choose for your Immersive. For example, the crafting table uses the `HitboxPositioningMode.TOP_PLAYER_FACING`. This means:
+The `ImmersiveBuilder` works off of what are called "relative hitboxes". Relative hitboxes, unlike normal hitboxes, are defined by an offset from some position, with the offset being determined by the [`HitboxPositioningMode`](/javadoc/com/hammy275/immersivemc/api/client/immersive/HitboxPositioningMode.html) you choose for your Immersive. For example, the crafting table uses `HitboxPositioningMode.TOP_PLAYER_FACING`. This means:
 - All offsets originate from the top-center of the crafting table, the exact center of the middle slot on the texture.
 - Items will default to rendering facing the sky.
 - Offsets in the x direction always move right relative to the player when positive, and left when negative. For the crafting table, an offset of (0.125, 0, 0) is what ImmersiveMC uses to land exactly on the right-center square.
 - Offsets in the y direction always move forward when positive and backward when negative. For the crafting table, an offset of (0, -0.125, 0) is what ImmersiveMC uses to land exactly on the bottom-center square.
 - Offsets in the z direction always move up when positive and down when negative. ImmersiveMC uses a positive z-value to place the output of the crafting table far above the table itself.
 
-This is why the `ImmersiveBuilder` is so powerful! Leveraging relative hitboxes, you don't need to think about actual Minecraft coordinates. Simply think in terms of offsets, and ImmersiveMC will do all the hard work!
+This is why the `ImmersiveBuilder` is so powerful! Leveraging relative hitboxes, you don't need to think about actual Minecraft coordinates in the world. Simply think in terms of offsets, and ImmersiveMC will do all the hard work!
 
-## Let's Get Building!
+## Let's Get Building
 
 You're going to want to store your Immersive in a variable somewhere, so let's declare that and start building it. You'll need to pass in the `ImmersiveHandler` you made before to get building; all `Immersive`s need an `ImmersiveHandler` to function, and this is no exception!
 
 ```java
 public static final BuiltImmersive<?,?> myImmersive = ImmersiveBuilder.create(myHandler)
 ```
-Great! Now let's start building out our Immersive. You don't technically need to include anything here to have a valid Immersive, but you'll want at least some of it to have something useful:
+Great! Now let's start building out our Immersive, modeled after the Immersive for the smithing table. You don't technically need to include anything here to have a valid Immersive, but you'll want at least some of it to have something useful:
 
 - `.setPositioningMode(HitboxPositioningMode.TOP_PLAYER_FACING)`: This sets our positioning mode so we place hitboxes in the same way as described for the crafting table.
 - `.addHitbox(RelativeHitboxInfoBuilder.createItemInput(new Vec3(-0.3333, 0, 0), 0.325).build())`: This makes a hitbox with size 0.325 and places it 0.3333 blocks to the left. Notice how we use `createItemInput()` here, as this hitbox should accept items.
@@ -42,20 +42,24 @@ Great! Now let's start building out our Immersive. You don't technically need to
 - `.setRenderSize(0.3333f)`: Sets the default rendering size for all items.
 - `.setHitboxInteractHandler((info, player, slot, hand) -> {
         ImmersiveClientLogicHelpers.instance().sendSwapPacket(info.getBlockPosition(), slot, hand);
-        return ClientConstants.defaultCooldownTicks;
+        return ImmersiveClientConstants.instance().defaultCooldown();
     })`: This tells the Immersive what to do when a player interacts with a hitbox. The body of the method simply sends a packet to the server telling it to call your `ImmersiveHandler`'s `swap()` method with the slot of the hitbox that was interacted with.
 - `.build()`: Builds our Immersive!
 
-And that's it! Delcare the variable, place these all in, and you have a fully-build Immersive! If you look in `ImmersiveBuilder`, you'll see there's a lot more you can add. Anything from text to config screen information can all be added here.
+And that's it! Declare the variable, place these all in, and you have a fully-build Immersive! If you look in `ImmersiveBuilder`, you'll see there's a lot more you can add. Anything from text to config screen information can all be added here.
 
-## Registration Time!
+## Registration Time
 
 Like with `ImmersiveHandler`s, you'll need to register your newly `BuiltImmersive`. This should only be done on the client, and can be done by placing the following code in code that runs from your mod constructor only on your client:
 
 ```java
 ImmersiveMCClientRegistration.instance().addImmersiveRegistrationHandler(event -> {
-    event.register(myImmersive);
+    if (ImmersiveMCMeta.instance().compatibleWithAPIVersion("2.0")) {
+        event.register(myImmersive);
+    }
 });
 ```
+
+Notice that we have the same version check as mentioned when we were registering our handler.
 
 And you're done! At this point, if you launch the game, you should have your Immersive fully working!

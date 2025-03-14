@@ -25,13 +25,12 @@ At this point, your IDE should generate a lot of methods for you to complete. Le
 
 That was a lot! Even worse, looking in your IDE, you'll notice that some of these methods use even more interfaces from ImmersiveMC! Let's break those down real quick:
 
-
 | **Interface Name** | **Methods That Use It**                                  | **What It Is**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |--------------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `NetworkStorage`   | `makeInventoryContents()` and `getEmptyNetworkStorage()` | This object should hold all the data that needs to sync from the server to the client. `encode()` should place the data into a byte buffer, while `decode()` should turn an instance of this object created from `getEmptyNetworkStorage()` into the same data that you had on the server, but now on the client!<br/>You should make an implementation of this function, update the type parameter for your `ImmersiveHandler` to that type, then update the method accordingly.<br/>Need an example? Take a look at ImmersiveMC's internal `ListOfItemsStorage`. |
 | `ItemSwapAmount`   | `swap()`                                                 | Users can configure the amount of items to swap and can hold their "break block" button to swap an entire stack of items. This object encapsulates that information; simply call `ItemSwapAmount#getNumItemsToSwap()` with the stack size of the item in the player's hand, or pass it to `ImmersiveLogicHelpers#swapItems()` and let it do the work!                                                                                                                                                                                                              |
 
-Want an example? Take a look at ImmersiveMC's `BrewingStandHandler` in your IDE!
+Now that you have an idea of everything that goes into an `ImmersiveHandler`, implement the provided methods for your Immersive! Want an example? Take a look at ImmersiveMC's `BrewingStandHandler` in your IDE! It's one of the simplest `ImmersiveHandler`s in ImemrsiveMC's codebase.
 
 ## Registering Your `ImmersiveHandler`
 
@@ -41,13 +40,14 @@ This one's easy! First, make an instance of your `ImmersiveHandler` somewhere, y
 public static final ImmersiveHandler<NetworkStorage> myHandler = new MyHandler();
 ```
 
-Then, in your mod's constructor, let ImmersiveMC know that when it comes time to register, register it!
+Then, in your mod's constructor, let ImmersiveMC know that when it comes time to register, register it! Note that we first check if the current version of ImmersiveMC is compatible with API version `2.0`, the API version for ImmersiveMC 1.5.0. Otherwise, we may use a feature that ImmersiveMC no longer has, thus causing a crash or other issue!
 
 ```java
 ImmersiveMCRegistration.instance().addImmersiveHandlerRegistrationHandler(event -> {
-    event.register(myHandler);
+    if (ImmersiveMCMeta.instance().compatibleWithAPIVersion("2.0")) {
+        event.register(myHandler);
+    }
 });
 ```
 
-Congratulations! You're `ImmersiveHandler` is done!
-
+Congratulations! Your `ImmersiveHandler` is done!

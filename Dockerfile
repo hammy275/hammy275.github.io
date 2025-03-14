@@ -4,7 +4,7 @@ FROM ubuntu:latest
 
 # Install OpenJDK
 RUN apt update
-RUN apt install openjdk-17-jdk git -y
+RUN apt install openjdk-21-jdk git -y
 
 # Do a build so gradle and such are set up
 RUN git clone https://github.com/hammy275/immersive-mc.git

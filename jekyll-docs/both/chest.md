@@ -14,6 +14,6 @@ By default, you can only interact with chests in VR. Move your hands at the line
 
 ## Using the Chest
 
-Once you have the chest open, you can right click/grab items or blue boxes to place items in/take items out of the chest.
+Once you have the chest open, you can right click/grab items or blue boxes to place items in/take items out of the chest. By pointing at the chest and clicking the button used to break blocks (left-click on desktop or your primary hand's trigger button in VR by default), you will cycle which row of chest items appear on the top.
 
 ![](/gif/chest_nonvr.gif)
