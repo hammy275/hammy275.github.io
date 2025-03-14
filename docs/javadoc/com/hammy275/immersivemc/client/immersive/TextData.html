@@ -91,7 +91,7 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">TextData</span>(net.minecraft.network.chat.Component&nbsp;text, net.minecraft.world.phys.Vec3&nbsp;pos)
+<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">TextData</span>(net.minecraft.network.chat.Component&nbsp;text, net.minecraft.world.phys.Vec3&nbsp;offset)
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></span></div>
 </section>
 <section class="summary">
@@ -105,7 +105,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(net.minecraft.network.chat.Component,net.minecraft.world.phys.Vec3)" class="member-name-link">TextData</a><wbr>(net.minecraft.network.chat.Component&nbsp;text,
- net.minecraft.world.phys.Vec3&nbsp;pos)</code></div>
+ net.minecraft.world.phys.Vec3&nbsp;offset)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates an instance of a <code>TextData</code> record class.</div>
 </div>
@@ -134,9 +134,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns a hash code value for this object.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>net.minecraft.world.phys.Vec3</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#pos()" class="member-name-link">pos</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#offset()" class="member-name-link">offset</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the value of the <code>pos</code> record component.</div>
+<div class="block">Returns the value of the <code>offset</code> record component.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>net.minecraft.network.chat.Component</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#text()" class="member-name-link">text</a>()</code></div>
@@ -169,12 +169,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(net.minecraft.network.chat.Component,net.minecraft.world.phys.Vec3)">
 <h3>TextData</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TextData</span><wbr><span class="parameters">(net.minecraft.network.chat.Component&nbsp;text,
- net.minecraft.world.phys.Vec3&nbsp;pos)</span></div>
+ net.minecraft.world.phys.Vec3&nbsp;offset)</span></div>
 <div class="block">Creates an instance of a <code>TextData</code> record class.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>text</code> - the value for the <code>text</code> record component</dd>
-<dd><code>pos</code> - the value for the <code>pos</code> record component</dd>
+<dd><code>offset</code> - the value for the <code>offset</code> record component</dd>
 </dl>
 </section>
 </li>
@@ -239,13 +239,13 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="pos()">
-<h3>pos</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">net.minecraft.world.phys.Vec3</span>&nbsp;<span class="element-name">pos</span>()</div>
-<div class="block">Returns the value of the <code>pos</code> record component.</div>
+<section class="detail" id="offset()">
+<h3>offset</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">net.minecraft.world.phys.Vec3</span>&nbsp;<span class="element-name">offset</span>()</div>
+<div class="block">Returns the value of the <code>offset</code> record component.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the value of the <code>pos</code> record component</dd>
+<dd>the value of the <code>offset</code> record component</dd>
 </dl>
 </section>
 </li>

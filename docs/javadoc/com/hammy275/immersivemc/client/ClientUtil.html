@@ -160,13 +160,18 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static net.minecraft.util.Tuple<wbr>&lt;net.minecraft.world.phys.Vec3,<wbr>net.minecraft.world.phys.Vec3&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getStartAndEndOfLookTrace(net.minecraft.world.entity.player.Player)" class="member-name-link">getStartAndEndOfLookTrace</a><wbr>(net.minecraft.world.entity.player.Player&nbsp;player)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#openBag(net.minecraft.world.entity.player.Player)" class="member-name-link">openBag</a><wbr>(net.minecraft.world.entity.player.Player&nbsp;player)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static net.minecraft.world.phys.Vec3</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lerpVec3(net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3,float)" class="member-name-link">lerpVec3</a><wbr>(net.minecraft.world.phys.Vec3&nbsp;start,
+ net.minecraft.world.phys.Vec3&nbsp;end,
+ float&nbsp;partialTick)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static net.minecraft.world.phys.Vec3</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#playerPos()" class="member-name-link">playerPos</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Gets player position while accounting for partial ticks (getFrameTime())</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#openBag(net.minecraft.world.entity.player.Player)" class="member-name-link">openBag</a><wbr>(net.minecraft.world.entity.player.Player&nbsp;player)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static net.minecraft.world.phys.Vec3</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#playerPos()" class="member-name-link">playerPos</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets player position while accounting for the partial tick.</div>
 </div>
 </div>
 </div>
@@ -226,6 +231,14 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="lerpVec3(net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3,float)">
+<h3>lerpVec3</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">net.minecraft.world.phys.Vec3</span>&nbsp;<span class="element-name">lerpVec3</span><wbr><span class="parameters">(net.minecraft.world.phys.Vec3&nbsp;start,
+ net.minecraft.world.phys.Vec3&nbsp;end,
+ float&nbsp;partialTick)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="clearDisabledImmersives()">
 <h3>clearDisabledImmersives</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">clearDisabledImmersives</span>()</div>
@@ -244,10 +257,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="playerPos()">
 <h3>playerPos</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">net.minecraft.world.phys.Vec3</span>&nbsp;<span class="element-name">playerPos</span>()</div>
-<div class="block">Gets player position while accounting for partial ticks (getFrameTime())</div>
+<div class="block">Gets player position while accounting for the partial tick.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>Player position while accounting for partial ticks</dd>
+<dd>The interpolated player position.</dd>
 </dl>
 </section>
 </li>

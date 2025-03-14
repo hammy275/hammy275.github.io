@@ -135,10 +135,15 @@ extends <a href="BoundingBox.html" title="interface in com.hammy275.immersivemc.
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">OBBs are rotated AABBs internally.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;net.minecraft.world.phys.Vec3&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rayHit(net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3)" class="member-name-link">rayHit</a><wbr>(net.minecraft.world.phys.Vec3&nbsp;rayStart,
- net.minecraft.world.phys.Vec3&nbsp;rayEnd)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="OBB.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">OBB</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#move(net.minecraft.world.phys.Vec3)" class="member-name-link">move</a><wbr>(net.minecraft.world.phys.Vec3&nbsp;movement)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates a new OBB which is this OBB, but moved by some amount.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;net.minecraft.world.phys.Vec3&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rayHit(net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3)" class="member-name-link">rayHit</a><wbr>(net.minecraft.world.phys.Vec3&nbsp;rayStart,
+ net.minecraft.world.phys.Vec3&nbsp;rayEnd)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Where the provided ray intersects this OBB the soonest.</div>
 </div>
 </div>
@@ -228,6 +233,19 @@ extends <a href="BoundingBox.html" title="interface in com.hammy275.immersivemc.
  significantly larger than the actual OBB, but good for detecting things that should then be detected on this OBB.
  Note that the actual sizing of the returned AABB is NOT covered under the API beyond the fact that it is
  guaranteed to contain the entirety of the OBB within its bounds.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="move(net.minecraft.world.phys.Vec3)">
+<h3>move</h3>
+<div class="member-signature"><span class="return-type"><a href="OBB.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">OBB</a></span>&nbsp;<span class="element-name">move</span><wbr><span class="parameters">(net.minecraft.world.phys.Vec3&nbsp;movement)</span></div>
+<div class="block">Creates a new OBB which is this OBB, but moved by some amount.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>movement</code> - Movement to move by.</dd>
+<dt>Returns:</dt>
+<dd>This OBB, but moved/translated by the provided movement.</dd>
 </dl>
 </section>
 </li>

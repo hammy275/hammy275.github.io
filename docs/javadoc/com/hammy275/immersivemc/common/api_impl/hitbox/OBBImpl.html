@@ -168,10 +168,15 @@ implements <a href="../../../api/common/hitbox/BoundingBox.html" title="interfac
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">OBBs are rotated AABBs internally.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;net.minecraft.world.phys.Vec3&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#rayHit(net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3)" class="member-name-link">rayHit</a><wbr>(net.minecraft.world.phys.Vec3&nbsp;rayStart,
- net.minecraft.world.phys.Vec3&nbsp;rayEnd)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../api/common/hitbox/OBB.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">OBB</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#move(net.minecraft.world.phys.Vec3)" class="member-name-link">move</a><wbr>(net.minecraft.world.phys.Vec3&nbsp;movement)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a new OBB which is this OBB, but moved by some amount.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;net.minecraft.world.phys.Vec3&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#rayHit(net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3)" class="member-name-link">rayHit</a><wbr>(net.minecraft.world.phys.Vec3&nbsp;rayStart,
+ net.minecraft.world.phys.Vec3&nbsp;rayEnd)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Where the provided ray intersects this OBB the soonest.</div>
 </div>
 </div>
@@ -323,6 +328,22 @@ implements <a href="../../../api/common/hitbox/BoundingBox.html" title="interfac
 <dt>Returns:</dt>
 <dd>A reasonably-sized AABB guaranteed to contain this OBB. Bad for collision checks, as it tends to be
  significantly larger than the actual OBB, but good for detecting things that should then be detected on this OBB.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="move(net.minecraft.world.phys.Vec3)">
+<h3>move</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../api/common/hitbox/OBB.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">OBB</a></span>&nbsp;<span class="element-name">move</span><wbr><span class="parameters">(net.minecraft.world.phys.Vec3&nbsp;movement)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../../api/common/hitbox/OBB.html#move(net.minecraft.world.phys.Vec3)">OBB</a></code></span></div>
+<div class="block">Creates a new OBB which is this OBB, but moved by some amount.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../api/common/hitbox/OBB.html#move(net.minecraft.world.phys.Vec3)">move</a></code>&nbsp;in interface&nbsp;<code><a href="../../../api/common/hitbox/OBB.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">OBB</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>movement</code> - Movement to move by.</dd>
+<dt>Returns:</dt>
+<dd>This OBB, but moved/translated by the provided movement.</dd>
 </dl>
 </section>
 </li>

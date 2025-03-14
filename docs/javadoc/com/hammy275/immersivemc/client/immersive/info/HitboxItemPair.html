@@ -117,6 +117,9 @@ implements <a href="../../../api/common/hitbox/HitboxInfo.html" title="interface
 <div class="col-first even-row-color"><code>net.minecraft.world.item.ItemStack</code></div>
 <div class="col-second even-row-color"><code><a href="#item" class="member-name-link">item</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>@Nullable net.minecraft.world.phys.Vec3</code></div>
+<div class="col-second odd-row-color"><code><a href="#lastPos" class="member-name-link">lastPos</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -152,9 +155,12 @@ implements <a href="../../../api/common/hitbox/HitboxInfo.html" title="interface
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Nullable <a href="../../../api/common/hitbox/BoundingBox.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">BoundingBox</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHitbox()" class="member-name-link">getHitbox</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isTriggerHitbox()" class="member-name-link">isTriggerHitbox</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../api/common/hitbox/BoundingBox.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">BoundingBox</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRenderHitbox(float)" class="member-name-link">getRenderHitbox</a><wbr>(float&nbsp;partialTick)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isTriggerHitbox()" class="member-name-link">isTriggerHitbox</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -189,6 +195,13 @@ implements <a href="../../../api/common/hitbox/HitboxInfo.html" title="interface
 <section class="detail" id="isTriggerHitbox">
 <h3>isTriggerHitbox</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isTriggerHitbox</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="lastPos">
+<h3>lastPos</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@Nullable net.minecraft.world.phys.Vec3</span>&nbsp;<span class="element-name">lastPos</span></div>
 </section>
 </li>
 </ul>
@@ -247,6 +260,20 @@ implements <a href="../../../api/common/hitbox/HitboxInfo.html" title="interface
 <dt>Returns:</dt>
 <dd>Whether this hitbox is a trigger hitbox. As of writing, this is if the break block button is
          required to be held while a hand is in this hitbox to activate it in VR.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getRenderHitbox(float)">
+<h3>getRenderHitbox</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../api/common/hitbox/BoundingBox.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">BoundingBox</a></span>&nbsp;<span class="element-name">getRenderHitbox</span><wbr><span class="parameters">(float&nbsp;partialTick)</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../api/common/hitbox/HitboxInfo.html#getRenderHitbox(float)">getRenderHitbox</a></code>&nbsp;in interface&nbsp;<code><a href="../../../api/common/hitbox/HitboxInfo.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">HitboxInfo</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>partialTick</code> - The partial tick between the current tick and the next.</dd>
+<dt>Returns:</dt>
+<dd>The bounding box to be used for rendering.</dd>
 </dl>
 </section>
 </li>

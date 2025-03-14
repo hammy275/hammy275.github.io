@@ -124,25 +124,28 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#instance()" class="member-name-link">instance</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../server/storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server">SwapResult</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount)" class="member-name-link">swapItems</a><wbr>(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,net.minecraft.world.entity.player.Player)" class="member-name-link">swapItems</a><wbr>(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
  net.minecraft.world.item.ItemStack&nbsp;stackInImmersive,
- <a href="../../server/storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;swapAmount)</code></div>
+ <a href="../../server/storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;swapAmount,
+ net.minecraft.world.entity.player.Player&nbsp;player)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the result of a swap action between a player and an Immersive where the player may place items into
  and take items out of a slot, such as the input slots of a furnace.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../server/storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server">SwapResult</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,int)" class="member-name-link">swapItems</a><wbr>(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,net.minecraft.world.entity.player.Player,int)" class="member-name-link">swapItems</a><wbr>(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
  net.minecraft.world.item.ItemStack&nbsp;stackInImmersive,
  <a href="../../server/storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;swapAmount,
+ net.minecraft.world.entity.player.Player&nbsp;player,
  int&nbsp;forcedMaxImmersiveStackSize)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the result of a swap action between a player and an Immersive where the player may place items into
  and take items out of a slot, such as the input slots of a furnace.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../server/storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server">SwapResult</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#swapItemsWithOutput(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack)" class="member-name-link">swapItemsWithOutput</a><wbr>(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
- net.minecraft.world.item.ItemStack&nbsp;stackInImmersive)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#swapItemsWithOutput(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,net.minecraft.world.entity.player.Player)" class="member-name-link">swapItemsWithOutput</a><wbr>(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
+ net.minecraft.world.item.ItemStack&nbsp;stackInImmersive,
+ net.minecraft.world.entity.player.Player&nbsp;player)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the result of a swap action between a player and an Immersive where the player may place items only into
  a slot, such as the output slot of a furnace.</div>
@@ -190,11 +193,12 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount)">
+<section class="detail" id="swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,net.minecraft.world.entity.player.Player)">
 <h3>swapItems</h3>
 <div class="member-signature"><span class="return-type"><a href="../../server/storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server">SwapResult</a></span>&nbsp;<span class="element-name">swapItems</span><wbr><span class="parameters">(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
  net.minecraft.world.item.ItemStack&nbsp;stackInImmersive,
- <a href="../../server/storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;swapAmount)</span></div>
+ <a href="../../server/storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;swapAmount,
+ net.minecraft.world.entity.player.Player&nbsp;player)</span></div>
 <div class="block">Gets the result of a swap action between a player and an Immersive where the player may place items into
  and take items out of a slot, such as the input slots of a furnace.</div>
 <dl class="notes">
@@ -211,11 +215,12 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,int)">
+<section class="detail" id="swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,net.minecraft.world.entity.player.Player,int)">
 <h3>swapItems</h3>
 <div class="member-signature"><span class="return-type"><a href="../../server/storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server">SwapResult</a></span>&nbsp;<span class="element-name">swapItems</span><wbr><span class="parameters">(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
  net.minecraft.world.item.ItemStack&nbsp;stackInImmersive,
  <a href="../../server/storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;swapAmount,
+ net.minecraft.world.entity.player.Player&nbsp;player,
  int&nbsp;forcedMaxImmersiveStackSize)</span></div>
 <div class="block">Gets the result of a swap action between a player and an Immersive where the player may place items into
  and take items out of a slot, such as the input slots of a furnace.</div>
@@ -225,6 +230,7 @@ loadScripts(document, 'script');</script>
 <dd><code>stackInImmersive</code> - The <code>ItemStack</code> currently in the slot of the Immersive the player is interacting
                          with.</dd>
 <dd><code>swapAmount</code> - The <a href="../../server/storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server"><code>ItemSwapAmount</code></a> that is determining the settings for how many items to swap.</dd>
+<dd><code>player</code> - The player performing the swap.</dd>
 <dd><code>forcedMaxImmersiveStackSize</code> - A forced maximum stack size for the slot in the Immersive, or -1 to use the item's stack size.</dd>
 <dt>Returns:</dt>
 <dd>A <a href="../../server/storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server"><code>SwapResult</code></a> containing the <code>ItemStack</code>s that should be placed in the player's hand, be
@@ -234,10 +240,11 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="swapItemsWithOutput(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack)">
+<section class="detail" id="swapItemsWithOutput(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,net.minecraft.world.entity.player.Player)">
 <h3>swapItemsWithOutput</h3>
 <div class="member-signature"><span class="return-type"><a href="../../server/storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server">SwapResult</a></span>&nbsp;<span class="element-name">swapItemsWithOutput</span><wbr><span class="parameters">(net.minecraft.world.item.ItemStack&nbsp;stackFromPlayer,
- net.minecraft.world.item.ItemStack&nbsp;stackInImmersive)</span></div>
+ net.minecraft.world.item.ItemStack&nbsp;stackInImmersive,
+ net.minecraft.world.entity.player.Player&nbsp;player)</span></div>
 <div class="block">Gets the result of a swap action between a player and an Immersive where the player may place items only into
  a slot, such as the output slot of a furnace.</div>
 <dl class="notes">
@@ -245,6 +252,7 @@ loadScripts(document, 'script');</script>
 <dd><code>stackFromPlayer</code> - The <code>ItemStack</code> currently in the player's hand.</dd>
 <dd><code>stackInImmersive</code> - The <code>ItemStack</code> currently in the output slot of the Immersive the player is
                          interacting with.</dd>
+<dd><code>player</code> - The player performing the swap.</dd>
 <dt>Returns:</dt>
 <dd>A <a href="../../server/storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server"><code>SwapResult</code></a> containing the <code>ItemStack</code>s that should be placed in the player's hand, be
          placed into the slot of the Immersive being interacted with, and the leftovers that should be given to

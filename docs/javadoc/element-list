@@ -7,6 +7,7 @@ com.hammy275.immersivemc.api.common.immersive
 com.hammy275.immersivemc.client
 com.hammy275.immersivemc.client.api_impl
 com.hammy275.immersivemc.client.compat
+com.hammy275.immersivemc.client.compat.ipn
 com.hammy275.immersivemc.client.config
 com.hammy275.immersivemc.client.config.screen
 com.hammy275.immersivemc.client.immersive
@@ -44,6 +45,7 @@ com.hammy275.immersivemc.mixin.throw_redirectors
 com.hammy275.immersivemc.mixin.throw_render_helpers.vivecraft
 com.hammy275.immersivemc.server
 com.hammy275.immersivemc.server.api_impl
+com.hammy275.immersivemc.server.command
 com.hammy275.immersivemc.server.data
 com.hammy275.immersivemc.server.immersive
 com.hammy275.immersivemc.server.storage.server

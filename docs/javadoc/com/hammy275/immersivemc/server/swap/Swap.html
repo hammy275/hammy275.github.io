@@ -186,10 +186,11 @@ loadScripts(document, 'script');</script>
  int&nbsp;numElements)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="../storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server">SwapResult</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,int,java.util.function.Consumer,java.util.function.Consumer)" class="member-name-link">swapItems</a><wbr>(net.minecraft.world.item.ItemStack&nbsp;handStack,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,int,net.minecraft.world.entity.player.Player,java.util.function.Consumer,java.util.function.Consumer)" class="member-name-link">swapItems</a><wbr>(net.minecraft.world.item.ItemStack&nbsp;handStack,
  net.minecraft.world.item.ItemStack&nbsp;immersiveStack,
  <a href="../storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;swapAmount,
  int&nbsp;forcedMaxImmersiveStackSize,
+ net.minecraft.world.entity.player.Player&nbsp;player,
  @Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;itemCountIncrementer,
  @Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;itemCountClearer)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -227,18 +228,19 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,int,java.util.function.Consumer,java.util.function.Consumer)">
+<section class="detail" id="swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,int,net.minecraft.world.entity.player.Player,java.util.function.Consumer,java.util.function.Consumer)">
 <h3>swapItems</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="../storage/server/SwapResult.html" title="interface in com.hammy275.immersivemc.server.storage.server">SwapResult</a></span>&nbsp;<span class="element-name">swapItems</span><wbr><span class="parameters">(net.minecraft.world.item.ItemStack&nbsp;handStack,
  net.minecraft.world.item.ItemStack&nbsp;immersiveStack,
  <a href="../storage/server/ItemSwapAmount.html" title="interface in com.hammy275.immersivemc.server.storage.server">ItemSwapAmount</a>&nbsp;swapAmount,
  int&nbsp;forcedMaxImmersiveStackSize,
+ net.minecraft.world.entity.player.Player&nbsp;player,
  @Nullable
  @Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;itemCountIncrementer,
  @Nullable
  @Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;itemCountClearer)</span></div>
 <div class="block">Swap items. This is the logic for
- <a href="../../api/common/ImmersiveLogicHelpers.html#swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount)"><code>ImmersiveLogicHelpers.swapItems(ItemStack, ItemStack, ItemSwapAmount)</code></a>,
+ <a href="../../api/common/ImmersiveLogicHelpers.html#swapItems(net.minecraft.world.item.ItemStack,net.minecraft.world.item.ItemStack,com.hammy275.immersivemc.server.storage.server.ItemSwapAmount,net.minecraft.world.entity.player.Player)"><code>ImmersiveLogicHelpers.swapItems(ItemStack, ItemStack, ItemSwapAmount, Player)</code></a>,
  but also has callbacks for incrementing or clearing the item counts for the purposes of <a href="../../common/immersive/storage/dual/impl/ItemStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.dual.impl"><code>ItemStorage</code></a>. See
  the above-mentioned method for details of this method.</div>
 <dl class="notes">

@@ -135,6 +135,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isOBB()" class="member-name-link">isOBB</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="BoundingBox.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">BoundingBox</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#move(com.hammy275.immersivemc.api.common.hitbox.BoundingBox,net.minecraft.world.phys.Vec3)" class="member-name-link">move</a><wbr>(<a href="BoundingBox.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">BoundingBox</a>&nbsp;box,
+ net.minecraft.world.phys.Vec3&nbsp;movement)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates a new BoundingBox which is the same as the provided one, but moved by the provided movement.</div>
+</div>
 </div>
 </div>
 </div>
@@ -220,6 +226,21 @@ loadScripts(document, 'script');</script>
 <dd><code>box</code> - The BoundingBox to get the center of.</dd>
 <dt>Returns:</dt>
 <dd>The center of the provided BoundingBox.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="move(com.hammy275.immersivemc.api.common.hitbox.BoundingBox,net.minecraft.world.phys.Vec3)">
+<h3>move</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="BoundingBox.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">BoundingBox</a></span>&nbsp;<span class="element-name">move</span><wbr><span class="parameters">(<a href="BoundingBox.html" title="interface in com.hammy275.immersivemc.api.common.hitbox">BoundingBox</a>&nbsp;box,
+ net.minecraft.world.phys.Vec3&nbsp;movement)</span></div>
+<div class="block">Creates a new BoundingBox which is the same as the provided one, but moved by the provided movement.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>box</code> - The original BoundingBox to move.</dd>
+<dd><code>movement</code> - The amount on each axis to move the BoundingBox by.</dd>
+<dt>Returns:</dt>
+<dd>A new BoundingBox, which is the original, but translated by the provided movement.</dd>
 </dl>
 </section>
 </li>
