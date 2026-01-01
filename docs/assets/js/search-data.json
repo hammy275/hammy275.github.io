@@ -15,7 +15,7 @@
   },"2": {
     "doc": "Bag",
     "title": "Opening the Bag",
-    "content": "There are several ways to open the bag: . | Reach behind your back with your secondary hand (the hand which would normally hold shields). This gesture can be customized in ImmersiveMC’s settings under “Customize Bag”. | Add the “Open/Close Bag” button to your Radial Menu. This can be done by going to Options -&gt; VR Settings -&gt; Radial Menu, then clicking the button you want to replace, then scrolling and clicking “Open/Close Bag”. | Add it to your SteamVR Bindings under the “Modded” tab. | . When you’re done with the bag, you can follow the same steps used to open it to close it. ",
+    "content": "There are several ways to open the bag: . | Reach behind your back with your secondary hand (the hand which would normally hold shields). Once you feel a controller vibration, press your trigger or grip button. This gesture can be customized in ImmersiveMC’s settings under “Customize Bag”. | Add the “Open/Close Bag” button to your Radial Menu. This can be done by going to Options -&gt; VR Settings -&gt; Radial Menu, then clicking the button you want to replace, then scrolling and clicking “Open/Close Bag”. | Add it to your SteamVR Bindings under the “Modded” tab. | . When you’re done with the bag, you can follow the same steps used to open it to close it. ",
     "url": "/vr/bag.html#opening-the-bag",
     
     "relUrl": "/vr/bag.html#opening-the-bag"
@@ -307,40 +307,40 @@
     
     "relUrl": "/both/hopper.html"
   },"44": {
-    "doc": "Immersives",
-    "title": "Immersives",
-    "content": "These immersives can be used by anyone, whether in VR or not! When interacting with immersives, you’ll right-click if you’re out of VR, or if you’re in VR, you’ll physically place the item into the immersive. ",
-    "url": "/both/",
-    
-    "relUrl": "/both/"
-  },"45": {
-    "doc": "VR Only Immersives",
-    "title": "VR Only Immersives",
-    "content": "These immersives can only be used in VR! . ",
-    "url": "/vr/",
-    
-    "relUrl": "/vr/"
-  },"46": {
     "doc": "The ImmersiveMC API",
     "title": "The ImmersiveMC API",
     "content": "Starting with ImmersiveMC 1.5.0 Beta 2, ImmersiveMC comes with a fully-featured API to make programming your own block-based Immersives as easy as possible! . ",
     "url": "/api/",
     
     "relUrl": "/api/"
-  },"47": {
+  },"45": {
     "doc": "The ImmersiveMC API",
     "title": "Warning",
     "content": "Due to ImmersiveMC being a mod that has constantly evolving features and VR requirements, the API will likely change as ImmersiveMC changes. This documentation should remain up-to-date to match the latest version of the API, however you may need to adjust your code as these updates happen to ensure your ImmersiveMC integration does not cause a crash with incompatible versions. This guide will cover how to do so. ",
     "url": "/api/#warning",
     
     "relUrl": "/api/#warning"
-  },"48": {
+  },"46": {
     "doc": "The ImmersiveMC API",
     "title": "Getting Started",
     "content": "The pages on the left-hand side are ordered in such a way for you to learn how to make block-based Immersives using ImmersiveMC’s API. Before then, though, you’ll need to add ImmersiveMC to your project! . Setup . Loom (Fabric and Architectury) . | Add the following to your build.gradle file. For Architectury, this should be done for all of your subprojects: repositories { maven { url = \"https://cursemaven.com\" } } . | Add the following to the dependencies section of your build.gradle. FILE_ID should be replaced with the file ID of the ImmersiveMC version you depend on. The FILE_ID can be found by visiting the “Files” tab of ImmersiveMC’s CurseForge page, clicking the file you want, then copying the numbers at the end of the URL. As with step 1, if you’re using an Architectury project, this should be done for all of your subprojects, using the Fabric version of ImmersiveMC for your common subproject: modApi \"curse.maven:immersivemc-607017:FILE_ID\" . | Refresh gradle, then you’ll be good to go! | . NeoForge and Forge . | Add the following to your build.gradle file. repositories { maven { url = \"https://cursemaven.com\" } } . | Add the following to the dependencies section of your build.gradle. FILE_ID should be replaced with the file ID of the ImmersiveMC version you depend on. The FILE_ID can be found by visiting the “Files” tab of ImmersiveMC’s CurseForge page, clicking the file you want, then copying the numbers at the end of the URL. compileOnly fg.deobf(\"curse.maven:mcvrapi-591092:FILE_ID\") runtimeOnly fg.deobf(\"curse.maven:mcvrapi-591092:FILE_ID\") . | Refresh gradle, then you’ll be good to go! | . ",
     "url": "/api/#getting-started",
     
     "relUrl": "/api/#getting-started"
+  },"47": {
+    "doc": "VR Only Immersives",
+    "title": "VR Only Immersives",
+    "content": "These immersives can only be used in VR! . ",
+    "url": "/vr/",
+    
+    "relUrl": "/vr/"
+  },"48": {
+    "doc": "Immersives",
+    "title": "Immersives",
+    "content": "These immersives can be used by anyone, whether in VR or not! When interacting with immersives, you’ll right-click if you’re out of VR, or if you’re in VR, you’ll physically place the item into the immersive. ",
+    "url": "/both/",
+    
+    "relUrl": "/both/"
   },"49": {
     "doc": "ImmersiveMC Wiki",
     "title": "ImmersiveMC Wiki",

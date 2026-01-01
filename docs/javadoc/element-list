@@ -4,6 +4,7 @@ com.hammy275.immersivemc.api.client.immersive
 com.hammy275.immersivemc.api.common
 com.hammy275.immersivemc.api.common.hitbox
 com.hammy275.immersivemc.api.common.immersive
+com.hammy275.immersivemc.api.common.immersive.petting
 com.hammy275.immersivemc.client
 com.hammy275.immersivemc.client.api_impl
 com.hammy275.immersivemc.client.compat
@@ -15,6 +16,7 @@ com.hammy275.immersivemc.client.immersive_item
 com.hammy275.immersivemc.client.immersive_item.info
 com.hammy275.immersivemc.client.immersive.book
 com.hammy275.immersivemc.client.immersive.info
+com.hammy275.immersivemc.client.interact_module
 com.hammy275.immersivemc.client.model
 com.hammy275.immersivemc.client.subscribe
 com.hammy275.immersivemc.client.tracker
@@ -48,9 +50,12 @@ com.hammy275.immersivemc.server.api_impl
 com.hammy275.immersivemc.server.command
 com.hammy275.immersivemc.server.data
 com.hammy275.immersivemc.server.immersive
+com.hammy275.immersivemc.server.immersive.petting
 com.hammy275.immersivemc.server.storage.server
 com.hammy275.immersivemc.server.storage.world
 com.hammy275.immersivemc.server.storage.world.impl
 com.hammy275.immersivemc.server.swap
 com.hammy275.immersivemc.server.tracker
 com.hammy275.immersivemc.server.tracker.vrhand
+com.hammy275.immersivemc.test
+com.hammy275.immersivemc.test.tests
