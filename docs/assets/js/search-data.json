@@ -106,7 +106,7 @@
   },"15": {
     "doc": "Buttons and Levers",
     "title": "Buttons and Levers",
-    "content": "You can physically push buttons to push them in-game, and you can physically move levers to move the levers in-game! Note that lever detection isn’t perfect, and it will move even if you aren’t flicking in the direction the lever should go. ",
+    "content": "You can physically push buttons to push them in-game, and you can physically move levers to move the levers in-game! . ",
     "url": "/vr/buttons_and_levers.html",
     
     "relUrl": "/vr/buttons_and_levers.html"
