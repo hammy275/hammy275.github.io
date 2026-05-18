@@ -5,7 +5,9 @@ nav_order: 3
 
 # The `ImmersiveBuilder`
 
-Now that you've made an `ImmersiveHandler`, you're ready to make the "client-side" part of your Immersive! Let's learn the easy way, the `ImmersiveBuilder`.  The `ImmersiveBuilder` is a quite powerful tool that handles several difficult aspects of making an Immersive and boils it down to a simple builder pattern. It may not give you the unlimited control a full `Immersive` implementation would, but it's powerful enough to create nearly any item-swapping Immersive you can think of with ease! ImmersiveMC uses it for things as simple as the furnace to things as complex as the enchanting table to give you an idea of what things are possible.
+Now that you've made an `ImmersiveHandler`, you're ready to make the "client-side" part of your Immersive! Let's learn the easy way, the `ImmersiveBuilder`.
+
+The `ImmersiveBuilder` is a quite powerful tool that handles several difficult aspects of making an Immersive and boils it down to a simple builder pattern. It may not give you the unlimited control a full `Immersive` implementation would, but it's powerful enough to create nearly any item-swapping Immersive you can think of with ease! ImmersiveMC uses it for things as simple as the furnace to things as complex as the enchanting table to give you an idea of what things are possible.
 
 ## Relative Hitboxes
 
@@ -54,7 +56,7 @@ Like with `ImmersiveHandler`s, you'll need to register your newly `BuiltImmersiv
 
 ```java
 ImmersiveMCClientRegistration.instance().addImmersiveRegistrationHandler(event -> {
-    if (ImmersiveMCMeta.instance().compatibleWithAPIVersion("2.0")) {
+    if (ImmersiveMCMeta.instance().compatibleWithAPIVersion("4.0")) {
         event.register(myImmersive);
     }
 });

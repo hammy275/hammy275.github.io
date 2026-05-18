@@ -11,6 +11,6 @@ From a user's perspective, this can be pretty well-defined as any individual Imm
 
 1. The aforementioned user-definition of an Immersive.
 2. The aforementioned user-definition of an Immersive, but only for ones that are tied to blocks. This is also called a "block-based Immersive". Something like the furnace's Immersive falls under this definition, while the ranged grab Immersive does not.
-3. A literal implementation of the `Immersive` interface. You'll learn more about this as you go along.
+3. A literal implementation of the `Immersive` interface. You'll learn more about this later.
 
-As you can see, the term "Immersive" isn't quite so clear-cut! You may have to infer which definition is being used from context, but to keep things clear, the ImmersiveMC API specifically allows for the implementation of block-based Immersives (2) using at least one implementation of the `Immersive` interface (3).
+As you can see, the term "Immersive" isn't quite so clear-cut! You may have to infer which definition is being used from context, but to keep things clear, the ImmersiveMC API specifically allows for the implementation of block-based Immersives (2) using implementations of the `Immersive` interface (3).

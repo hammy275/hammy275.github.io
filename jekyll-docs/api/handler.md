@@ -14,14 +14,14 @@ Go ahead and make a new class, and have it implement the `ImmersiveHandler` inte
 At this point, your IDE should generate a lot of methods for you to complete. Let's go over them one-by-one, then get into the finer details on some of the interfaces being used here.
 
 - `makeInventoryContents()`: Although the server knows of the contents of a block, such as the items in a chest, the client doesn't know about them until they open that block's GUI! ImmersiveMC doesn't use GUIs however, so it needs to send the contents separately. This function is used to retrieve an object that can be encoded into a buffer to send the contents of the block to the client.
-- `getEmptyNetworkStorage()`: When the client receives the buffer, it calls this function to get a `NetworkStorage` instance before calling its `decode()` function.
+- `getEmptyNetworkStorage()`: When the client receives the buffer, it calls this function to get a fresh instance of a `NetworkStorage` implementation before calling its `decode()` function.
 - `swap()`: All Immersive interactions happen initially on the client. When such an interaction happens, the client tells the server which slot it interacted with and at what position. This is where the server should perform the action that should take place! For example, if the user interacted with slot 0 of an empty furnace with a raw porkchop in their hand, your `swap()` implementation would want to move the raw porkchop into the empty furnace slot.
 - `isDirtyForClientSync()`: To prevent sending the contents of every block all the time, ImmersiveMC only sends block contents to the client on a given tick where this function returns `true`.
 - `isValidBlock()`: This function should simply return whether the provided block position in the given level matches this Immersive.
 - `enabledInConfig()`: This function should declare whether this Immersive is enabled in the provided player's configuration. If you don't have or want to provide configuration for this Immersive, simply return `true` here.
 - `clientAuthoritative()`: Normally, Immersives exist on the client the first time they receive inventory contents from the server. If this is `true`, they will instead activate the moment they can. Immersives which return `true` for this should *always* return `false` for `isDirtyForClientSync()`. If this is your first Immersive, simply return `false` from here, you're still learning!
 - `getID()`: An ID that uniquely identifies your Immersive. Make sure to keep it in your mod's namespace!
-- `onStopTracking()` (optional): This function gets called on the server-side when an Immersive stops being tracked. You don't need to implement this, but you may find it useful for your Immersive!
+- `onStopTracking()` (optional): This function gets called on the server-side when an Immersive stops being tracked by a player server-side. You don't need to implement this, but you may find it useful for your Immersive! For example, ImmersiveMC uses this to clear up data related to the chest lid when the chest itself is no longer being tracked.
 
 That was a lot! Even worse, looking in your IDE, you'll notice that some of these methods use even more interfaces from ImmersiveMC! Let's break those down real quick:
 
@@ -40,11 +40,11 @@ This one's easy! First, make an instance of your `ImmersiveHandler` somewhere, y
 public static final ImmersiveHandler<NetworkStorage> myHandler = new MyHandler();
 ```
 
-Then, in your mod's constructor, let ImmersiveMC know that when it comes time to register, register it! Note that we first check if the current version of ImmersiveMC is compatible with API version `2.0`, the API version for ImmersiveMC 1.5.0. Otherwise, we may use a feature that ImmersiveMC no longer has, thus causing a crash or other issue!
+Then, in your mod's constructor, let ImmersiveMC know that when it comes time to register, register it! Note that we first check if the current version of ImmersiveMC is compatible with the API version for the version of ImmersiveMC you're using. You can see the list of ImmersiveMC API versions in the comments [here](https://github.com/hammy275/immersive-mc/blob/26.1.x/common/src/main/java/com/hammy275/immersivemc/common/config/CommonConstants.java), though as of writing, the latest is `4.0` for ImmersiveMC 1.6.0 Alpha 3. Without checking this, we may use a feature that ImmersiveMC no longer has, thus causing a crash or other issue!
 
 ```java
 ImmersiveMCRegistration.instance().addImmersiveHandlerRegistrationHandler(event -> {
-    if (ImmersiveMCMeta.instance().compatibleWithAPIVersion("2.0")) {
+    if (ImmersiveMCMeta.instance().compatibleWithAPIVersion("4.0")) {
         event.register(myHandler);
     }
 });

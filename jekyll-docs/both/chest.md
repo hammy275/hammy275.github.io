@@ -8,12 +8,18 @@ Chests, trapped chests, and ender chests can all be interacted with!
 
 ## Opening/Closing the Chest
 
-By default, you can only interact with chests in VR. Move your hands at the line around two-thirds up the front of the chest, then make them rise quickly, as if you're trying to flip the lid of the chest open. To close the chest, brings your arms up to be level with the top of the lid, then move your arms down, as if you were closing the lid (even if you aren't touching it)!
+### VR
+
+By default, you can only interact with chests in VR. Move one of your hands at the line around two-thirds up the front of the chest, then hold your trigger button to "grab" the chest lid. From here, you can move your hand to open the lid as desired, or move your hand up then release the trigger button while still moving up to fling the lid open. To close the chest, simply grab the lid or the area above the chest with the trigger button held, then either bring the lid back down or release the trigger button.
+
+Once the chest is open, you can interact with items by simply placing your hand on the item or slot. Unlike most Immersives, chest interactions operate on the entire stack in the chest and in your hand at once.
+
+![](/gif/chest_vr.gif)
+
+### Non-VR
 
 **If you want to use the chest outside of VR**, turn on the setting `Right Click Chests`. Once you do so, you'll be able to open/close the chest from outside of VR with a right click, and inside of VR by pressing whatever button you have mapped to "Use" (the button used to place blocks).
 
-## Using the Chest
-
-Once you have the chest open, you can right click/grab items or blue boxes to place items in/take items out of the chest. By pointing at the chest and clicking the button used to break blocks (left-click on desktop or your primary hand's trigger button in VR by default), you will cycle which row of chest items appear on the top.
+Once the chest is open, you can interact with items by simply right-clicking the item or slot. Unlike most Immersives, chest interactions operate on the entire stack in the chest and in your hand at once.
 
 ![](/gif/chest_nonvr.gif)
