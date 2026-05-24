@@ -412,55 +412,27 @@
     
     "relUrl": "/vr/repeater.html"
   },"59": {
-    "doc": "Shields",
-    "title": "Shields",
-    "content": " ",
-    "url": "/vr/shields.html",
-    
-    "relUrl": "/vr/shields.html"
-  },"60": {
-    "doc": "Shields",
-    "title": "How to Use It",
-    "content": "VR players can block using shields without having to hold down the “use”/”right click” key! When using a shield like this, shields cover 60 degrees in each direction from the forward pointing direction of the shield. Additionally, shields have a hitbox, which can be used to deflect projectiles before they reach the player! . ",
-    "url": "/vr/shields.html#how-to-use-it",
-    
-    "relUrl": "/vr/shields.html#how-to-use-it"
-  },"61": {
-    "doc": "Shields",
-    "title": "In Comparison",
-    "content": "In comparison to regular shields (or shields being used by non-VR users), using shields in this way have the following advantages and disadvantages: . Advantages: . | You can dual-wield shields, giving you more coverage than the one shield provided in Vanilla. | VR users won’t slow down while blocking with shields. | . Disadvantages: . | VR users using 1 shield block less, only covering 60 degrees in each direction, rather than the 90 degrees that is provided to Vanilla players. | . ",
-    "url": "/vr/shields.html#in-comparison",
-    
-    "relUrl": "/vr/shields.html#in-comparison"
-  },"62": {
-    "doc": "Shields",
-    "title": "A Note",
-    "content": "VR users can choose to fallback to normal shield behavior by holding the “use”/”right click” key. ",
-    "url": "/vr/shields.html#a-note",
-    
-    "relUrl": "/vr/shields.html#a-note"
-  },"63": {
     "doc": "Shulker Box",
     "title": "Shulker Box",
     "content": "You can right click Shulker Boxes to open them without a GUI, and right click again to close them. They work similarly to chests, right clicking an item will stack the item or swap it with the one in your hand. Right clicking an empty space will put the item you’re holding into that slot. Additionally, you can punch to swap to the next row of slots, allowing you to interact with all 3 rows of your Shulker Boxes. ",
     "url": "/both/shulker_box.html",
     
     "relUrl": "/both/shulker_box.html"
-  },"64": {
+  },"60": {
     "doc": "Smithing Table",
     "title": "Smithing Table",
     "content": "Place your template in the left blue box, your tool, armor, or other “main” item in the middle blue box, and your material in the right blue box, by right-clicking/physically placing the item. An item should then appear above the smithing table if the three items you placed would create something (a netherite template + a diamond sword + a netherite ingot would create a netherite sword, for example). Simply right-click the item, or place your hand inside the item and press your “break block” button in VR, and you’ll grab the item! . ",
     "url": "/both/smithing_table.html",
     
     "relUrl": "/both/smithing_table.html"
-  },"65": {
+  },"61": {
     "doc": "Throwing",
     "title": "Throwing",
     "content": "You can throw things! Simply hold the button you use to break blocks while holding something you can throw, then release it as you move your hand to throw the item! The item will go farther depending on how hard you throw and it will go the direction you move your hand! . The following items can be thrown: . | Bottle o’ Enchanting | Egg | Ender Pearl | Snowball | Trident (throws where you point) | . ",
     "url": "/vr/throwing.html",
     
     "relUrl": "/vr/throwing.html"
-  },"66": {
+  },"62": {
     "doc": "What is an Immersive?",
     "title": "What is an Immersive?",
     "content": "Before we jump into writing some code, it’s important to cover a seemingly obvious question. What is an Immersive? . From a user’s perspective, this can be pretty well-defined as any individual ImmersiveMC feature that can be enabled or disabled. However, once you start working with ImmersiveMC’s codebase in any way, you’ll come to realize there are a few definitions for the word “Immersive” that are used interchangeably: . | The aforementioned user-definition of an Immersive. | The aforementioned user-definition of an Immersive, but only for ones that are tied to blocks. This is also called a “block-based Immersive”. Something like the furnace’s Immersive falls under this definition, while the ranged grab Immersive does not. | A literal implementation of the Immersive interface. You’ll learn more about this later. | . As you can see, the term “Immersive” isn’t quite so clear-cut! You may have to infer which definition is being used from context, but to keep things clear, the ImmersiveMC API specifically allows for the implementation of block-based Immersives (2) using implementations of the Immersive interface (3). ",
