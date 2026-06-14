@@ -1,12 +1,14 @@
 ---
-title: The `ImmersiveHandler`
+title: A BlockBasedImmersiveHandler
 ---
 
-Any good block-based Immersive is divided into two portions: its `ImmersiveHandler` and its `Immersive`. The `Immersive` portion covers anything only performed by the client, while the `ImmersiveHandler` covers everything else. Since an `Immersive` requires an `ImmersiveHandler` to even be fully-built, we'll start by making one first.
+[As discussed in concepts](/api/concepts/handler) an Immersive (or in this case, a block-based Immersive) is divided into two portions: its `ImmersiveHandler` and its `Immersive`. The `Immersive` portion covers anything only performed by the client, while the `ImmersiveHandler` covers everything else. Since an `Immersive` requires an `ImmersiveHandler` to even be fully-built, we'll start by making one first.
 
-## Making Your `ImmersiveHandler`
+Since we're building a block-based Immersive, we'll be working with the `BlockBasedImmersiveHandler` interface here.
 
-Go ahead and make a new class, and have it implement the `ImmersiveHandler` interface. For now, make the type parameter ImmersiveMC's `NetworkStorage` interface, we'll get back to this later.
+## Making Your `BlockBasedImmersiveHandler`
+
+Go ahead and make a new class, and have it implement the `BlockBasedImmersiveHandler` interface. For now, make the type parameter ImmersiveMC's `NetworkStorage` interface, we'll get back to this later.
 
 At this point, your IDE should generate a lot of methods for you to complete. Let's go over them one-by-one, then get into the finer details on some of the interfaces being used here.
 
@@ -27,24 +29,24 @@ That was a lot! Even worse, looking in your IDE, you'll notice that some of thes
 | `NetworkStorage`   | `makeInventoryContents()` and `getEmptyNetworkStorage()` | This object should hold all the data that needs to sync from the server to the client. `encode()` should place the data into a byte buffer, while `decode()` should turn an instance of this object created from `getEmptyNetworkStorage()` into the same data that you had on the server, but now on the client!<br/>You should make an implementation of this function, update the type parameter for your `ImmersiveHandler` to that type, then update the method accordingly.<br/>Need an example? Take a look at ImmersiveMC's internal `ListOfItemsStorage`. |
 | `ItemSwapAmount`   | `swap()`                                                 | Users can configure the amount of items to swap and can hold their "break block" button to swap an entire stack of items. This object encapsulates that information; simply call `ItemSwapAmount#getNumItemsToSwap()` with the stack size of the item in the player's hand, or pass it to `ImmersiveLogicHelpers#swapItems()` and let it do the work!                                                                                                                                                                                                              |
 
-Now that you have an idea of everything that goes into an `ImmersiveHandler`, implement the provided methods for your Immersive! Want an example? Take a look at ImmersiveMC's `BrewingStandHandler` in your IDE! It's one of the simplest `ImmersiveHandler`s in ImemrsiveMC's codebase.
+Now that you have an idea of everything that goes into a `BlockBasedImmersiveHandler`, implement the provided methods for your Immersive! Want an example? Take a look at ImmersiveMC's `BrewingStandHandler` in your IDE! It's one of the simplest `BlockBasedImmersiveHandler`s in ImemrsiveMC's codebase.
 
-## Registering Your `ImmersiveHandler`
+## Registering Your `BlockBasedImmersiveHandler`
 
-This one's easy! First, make an instance of your `ImmersiveHandler` somewhere, you'll need it!
+This one's easy! First, make an instance of your `BlockBasedImmersiveHandler` somewhere, you'll need it!
 
 ```java
-public static final ImmersiveHandler<NetworkStorage> myHandler = new MyHandler();
+public static final BlockBasedImmersiveHandler<NetworkStorage> myHandler = new MyHandler();
 ```
 
-Then, in your mod's constructor, let ImmersiveMC know that when it comes time to register, register it! Note that we first check if the current version of ImmersiveMC is compatible with the API version for the version of ImmersiveMC you're using. You can see the list of ImmersiveMC API versions in the comments [here](https://github.com/hammy275/immersive-mc/blob/26.1.x/common/src/main/java/com/hammy275/immersivemc/common/config/CommonConstants.java), though as of writing, the latest is `4.0` for ImmersiveMC 1.6.0 Alpha 3. Without checking this, we may use a feature that ImmersiveMC no longer has, thus causing a crash or other issue!
+Then, in your mod's constructor, let ImmersiveMC know that when it comes time to register, register it! Note that we first check if the current version of ImmersiveMC is compatible with the API version for the version of ImmersiveMC you're using. You can see the list of ImmersiveMC API versions in the comments [here](https://github.com/hammy275/immersive-mc/blob/26.1.x/common/src/main/java/com/hammy275/immersivemc/common/config/CommonConstants.java), though as of writing, the latest is `5.0` for ImmersiveMC 1.6.0 Alpha 4. Without checking this, we may use a feature that ImmersiveMC no longer has, thus causing a crash or other issue!
 
 ```java
 ImmersiveMCRegistration.instance().addImmersiveHandlerRegistrationHandler(event -> {
-    if (ImmersiveMCMeta.instance().compatibleWithAPIVersion("4.0")) {
+    if (ImmersiveMCMeta.instance().compatibleWithAPIVersion("5.0")) {
         event.register(myHandler);
     }
 });
 ```
 
-Congratulations! Your `ImmersiveHandler` is done!
+Congratulations! Your `BlockBasedImmersiveHandler` is done!

@@ -1,5 +1,5 @@
 ---
-title: "Introducing: The ImmersiveMC API"
+title: Introduction to the ImmersiveMC API
 ---
 
 Starting with ImmersiveMC 1.5.0 Beta 2, ImmersiveMC comes with a fully-featured API to make programming your own block-based Immersives as easy as possible!
@@ -10,7 +10,7 @@ Due to ImmersiveMC being a mod that has constantly evolving features and VR requ
 
 ## Getting Started
 
-The pages on the left-hand side are ordered in such a way for you to learn how to make block-based Immersives using ImmersiveMC's API. Before then, though, you'll need to add ImmersiveMC to your project!
+The pages on the left-hand side are ordered from more beginner concepts to more advanced functionality provided by ImmersiveMC. As such, it's recommended to begin reading about the [different concepts within ImmersiveMC](/api/concepts/immersive). Before then, though, you'll need to add ImmersiveMC to your project!
 
 ### Setup
 

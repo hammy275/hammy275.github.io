@@ -55,11 +55,25 @@ export default defineConfig({
 				{
 					label: "The ImmersiveMC API",
 					items: [
-						"api/introducing_the_api",
-						"api/what_is_an_immersive",
-						"api/handler",
-						"api/builder",
+						"api/api_intro",
+						{
+							"label": "Concepts",
+							"items": [
+								"api/concepts/immersive",
+								"api/concepts/handler",
+							],
+							collapsed: true
+						},
+						{
+							"label": "Your First Immersive: A Block-Based Immersive",
+							"items": [
+								"api/block_based/handler",
+								"api/block_based/builder"
+							],
+							collapsed: true
+						},
 						"api/everything_else",
+						{"label": "Javadocs", "link": "/javadoc"}
 					],
 					collapsed: true
 				}
