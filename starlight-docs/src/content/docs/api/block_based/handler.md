@@ -39,7 +39,7 @@ This one's easy! First, make an instance of your `BlockBasedImmersiveHandler` so
 public static final BlockBasedImmersiveHandler<NetworkStorage> myHandler = new MyHandler();
 ```
 
-Then, in your mod's constructor, let ImmersiveMC know that when it comes time to register, register it! Note that we first check if the current version of ImmersiveMC is compatible with the API version for the version of ImmersiveMC you're using. You can see the list of ImmersiveMC API versions in the comments [here](https://github.com/hammy275/immersive-mc/blob/26.1.x/common/src/main/java/com/hammy275/immersivemc/common/config/CommonConstants.java), though as of writing, the latest is `5.0` for ImmersiveMC 1.6.0 Alpha 4. Without checking this, we may use a feature that ImmersiveMC no longer has, thus causing a crash or other issue!
+Then, in your mod's constructor, let ImmersiveMC know that when it comes time to register, register it! Note that we first check if the current version of ImmersiveMC is compatible with the API version for the version of ImmersiveMC you're using. You can see the list of ImmersiveMC API versions in [the migration guide](/api/migration_guide), though as of writing, the latest is `5.0` for ImmersiveMC 1.6.0 Alpha 4. Without checking this, we may use a feature that ImmersiveMC no longer has, thus causing a crash or other issue!
 
 ```java
 ImmersiveMCRegistration.instance().addImmersiveHandlerRegistrationHandler(event -> {

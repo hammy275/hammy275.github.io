@@ -73,7 +73,8 @@ export default defineConfig({
 							collapsed: true
 						},
 						"api/everything_else",
-						{"label": "Javadocs", "link": "/javadoc"}
+						{"label": "Javadocs", "link": "/javadoc"},
+						"api/migration_guide"
 					],
 					collapsed: true
 				}
