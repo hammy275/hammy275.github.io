@@ -12,9 +12,9 @@ WORKDIR "/immersive-mc"
 RUN chmod +x ./gradlew
 RUN ./gradlew build
 
-# Install dependencies for Jekyll building
-RUN apt install ruby-full build-essential zlib1g-dev -y
-RUN gem install jekyll bundler
-RUN bundle config --global silence_root_warning 1
+# Install dependencies for building
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install npm rsync -y
 
 WORKDIR "/"
