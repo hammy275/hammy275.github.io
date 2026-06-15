@@ -67,8 +67,8 @@ loadScripts(document, 'script');</script>
 <li><a href="#tick(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo)" tabindex="0">tick(BuiltBlockBasedImmersiveInfo)</a></li>
 <li><a href="#getDragHitbox(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo)" tabindex="0">getDragHitbox(BuiltBlockBasedImmersiveInfo)</a></li>
 <li><a href="#isInputHitbox(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo,int)" tabindex="0">isInputHitbox(BuiltBlockBasedImmersiveInfo, int)</a></li>
-<li><a href="#shouldRender(com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState)" tabindex="0">shouldRender(BuiltImmersiveRenderState)</a></li>
-<li><a href="#render(com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState,com.mojang.blaze3d.vertex.PoseStack,com.hammy275.immersivemc.api.client.ImmersiveRenderHelpers,float)" tabindex="0">render(BuiltImmersiveRenderState, PoseStack, ImmersiveRenderHelpers, float)</a></li>
+<li><a href="#shouldRender(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState)" tabindex="0">shouldRender(BuiltBlockBasedImmersiveRenderState)</a></li>
+<li><a href="#render(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState,com.mojang.blaze3d.vertex.PoseStack,com.hammy275.immersivemc.api.client.ImmersiveRenderHelpers,float)" tabindex="0">render(BuiltBlockBasedImmersiveRenderState, PoseStack, ImmersiveRenderHelpers, float)</a></li>
 <li><a href="#buildInfo(net.minecraft.core.BlockPos,net.minecraft.world.level.Level)" tabindex="0">buildInfo(BlockPos, Level)</a></li>
 <li><a href="#shouldDisableRightClicksWhenVanillaInteractionsDisabled(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo)" tabindex="0">shouldDisableRightClicksWhenVanillaInteractionsDisabled(BuiltBlockBasedImmersiveInfo)</a></li>
 <li><a href="#getTrackedObjects()" tabindex="0">getTrackedObjects()</a></li>
@@ -78,7 +78,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#processStorageFromNetwork(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo,S)" tabindex="0">processStorageFromNetwork(BuiltBlockBasedImmersiveInfo, S)</a></li>
 <li><a href="#isVROnly()" tabindex="0">isVROnly()</a></li>
 <li><a href="#createRenderState()" tabindex="0">createRenderState()</a></li>
-<li><a href="#extractRenderState(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo,com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState,float)" tabindex="0">extractRenderState(BuiltBlockBasedImmersiveInfo, BuiltImmersiveRenderState, float)</a></li>
+<li><a href="#extractRenderState(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo,com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState,float)" tabindex="0">extractRenderState(BuiltBlockBasedImmersiveInfo, BuiltBlockBasedImmersiveRenderState, float)</a></li>
 <li><a href="#getBuilderClone(com.hammy275.immersivemc.api.common.immersive.BlockBasedImmersiveHandler)" tabindex="0">getBuilderClone(BlockBasedImmersiveHandler)</a></li>
 </ol>
 </li>
@@ -95,7 +95,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../api/client/immersive/BlockBasedImmersive.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BlockBasedImmersive</a>&lt;<a href="../../api/client/immersive/BuiltBlockBasedImmersiveInfo.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveInfo</a>&lt;E&gt;, <a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;ER&gt;, S&gt;, <a href="../../api/client/immersive/BuiltBlockBasedImmersive.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersive</a>&lt;E,<wbr>ER,<wbr>S&gt;, <a href="../../api/client/immersive/Immersive.html" title="interface in com.hammy275.immersivemc.api.client.immersive">Immersive</a>&lt;<a href="../../api/client/immersive/BuiltBlockBasedImmersiveInfo.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveInfo</a>&lt;E&gt;, <a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;ER&gt;, S&gt;</code></dd>
+<dd><code><a href="../../api/client/immersive/BlockBasedImmersive.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BlockBasedImmersive</a>&lt;<a href="../../api/client/immersive/BuiltBlockBasedImmersiveInfo.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveInfo</a>&lt;E&gt;, <a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;ER&gt;, S&gt;, <a href="../../api/client/immersive/BuiltBlockBasedImmersive.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersive</a>&lt;E,<wbr>ER,<wbr>S&gt;, <a href="../../api/client/immersive/Immersive.html" title="interface in com.hammy275.immersivemc.api.client.immersive">Immersive</a>&lt;<a href="../../api/client/immersive/BuiltBlockBasedImmersiveInfo.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveInfo</a>&lt;E&gt;, <a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;ER&gt;, S&gt;</code></dd>
 </dl>
 <hr>
 <div class="horizontal-scroll">
@@ -141,14 +141,14 @@ implements <a href="../../api/client/immersive/BuiltBlockBasedImmersive.html" ti
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The info needed to build a config screen button for this Immersive.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a><wbr>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a><wbr>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createRenderState()" class="member-name-link">createRenderState</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Creates a new render state not populated with any rendering-related details.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#extractRenderState(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo,com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState,float)" class="member-name-link">extractRenderState</a><wbr>(<a href="../../api/client/immersive/BuiltBlockBasedImmersiveInfo.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveInfo</a>&lt;<a href="#type-param-E" title="type parameter in BuiltBlockBasedImmersiveImpl">E</a>&gt;&nbsp;infoIn,
- <a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#extractRenderState(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo,com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState,float)" class="member-name-link">extractRenderState</a><wbr>(<a href="../../api/client/immersive/BuiltBlockBasedImmersiveInfo.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveInfo</a>&lt;<a href="#type-param-E" title="type parameter in BuiltBlockBasedImmersiveImpl">E</a>&gt;&nbsp;infoIn,
+ <a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn,
  float&nbsp;partialTicks)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Extract render state from the info into the provided render state object.</div>
@@ -198,7 +198,7 @@ implements <a href="../../api/client/immersive/BuiltBlockBasedImmersive.html" ti
 <div class="block">Process the storage from the server for this Immersive.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#render(com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState,com.mojang.blaze3d.vertex.PoseStack,com.hammy275.immersivemc.api.client.ImmersiveRenderHelpers,float)" class="member-name-link">render</a><wbr>(<a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#render(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState,com.mojang.blaze3d.vertex.PoseStack,com.hammy275.immersivemc.api.client.ImmersiveRenderHelpers,float)" class="member-name-link">render</a><wbr>(<a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn,
  com.mojang.blaze3d.vertex.PoseStack&nbsp;stack,
  <a href="../../api/client/ImmersiveRenderHelpers.html" title="interface in com.hammy275.immersivemc.api.client">ImmersiveRenderHelpers</a>&nbsp;helpers,
  float&nbsp;partialTick)</code></div>
@@ -212,7 +212,7 @@ implements <a href="../../api/client/immersive/BuiltBlockBasedImmersive.html" ti
 enabled in ImmersiveMC.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#shouldRender(com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState)" class="member-name-link">shouldRender</a><wbr>(<a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#shouldRender(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState)" class="member-name-link">shouldRender</a><wbr>(<a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Whether the provided render state should render in the world.</div>
 </div>
@@ -349,10 +349,10 @@ null here to not allow dragging. If non-null, the hitbox should contain all hitb
 </section>
 </li>
 <li>
-<section class="detail" id="shouldRender(com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState)">
+<section class="detail" id="shouldRender(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState)">
 <h3>shouldRender</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">shouldRender</span><wbr><span class="parameters">(<a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">shouldRender</span><wbr><span class="parameters">(<a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn)</span></div>
 <div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../api/client/immersive/Immersive.html#shouldRender(R)">Immersive</a></code></span></div>
 <div class="block">Whether the provided render state should render in the world. It's good to return false here if this Immersive
 does not have its data ready for rendering.</div>
@@ -369,10 +369,10 @@ does not have its data ready for rendering.</div>
 </section>
 </li>
 <li>
-<section class="detail" id="render(com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState,com.mojang.blaze3d.vertex.PoseStack,com.hammy275.immersivemc.api.client.ImmersiveRenderHelpers,float)">
+<section class="detail" id="render(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState,com.mojang.blaze3d.vertex.PoseStack,com.hammy275.immersivemc.api.client.ImmersiveRenderHelpers,float)">
 <h3>render</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">render</span><wbr><span class="parameters">(<a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">render</span><wbr><span class="parameters">(<a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn,
  com.mojang.blaze3d.vertex.PoseStack&nbsp;stack,
  <a href="../../api/client/ImmersiveRenderHelpers.html" title="interface in com.hammy275.immersivemc.api.client">ImmersiveRenderHelpers</a>&nbsp;helpers,
  float&nbsp;partialTick)</span></div>
@@ -549,7 +549,7 @@ true for <a href="../../api/client/immersive/Immersive.html#getHandler()"><code>
 <section class="detail" id="createRenderState()">
 <h3>createRenderState</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;</span>&nbsp;<span class="element-name">createRenderState</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;</span>&nbsp;<span class="element-name">createRenderState</span>()</div>
 <div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../api/client/immersive/Immersive.html#createRenderState()">Immersive</a></code></span></div>
 <div class="block">Creates a new render state not populated with any rendering-related details.</div>
 <dl class="notes">
@@ -562,11 +562,11 @@ true for <a href="../../api/client/immersive/Immersive.html#getHandler()"><code>
 </section>
 </li>
 <li>
-<section class="detail" id="extractRenderState(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo,com.hammy275.immersivemc.api.client.immersive.BuiltImmersiveRenderState,float)">
+<section class="detail" id="extractRenderState(com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveInfo,com.hammy275.immersivemc.api.client.immersive.BuiltBlockBasedImmersiveRenderState,float)">
 <h3>extractRenderState</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">extractRenderState</span><wbr><span class="parameters">(<a href="../../api/client/immersive/BuiltBlockBasedImmersiveInfo.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveInfo</a>&lt;<a href="#type-param-E" title="type parameter in BuiltBlockBasedImmersiveImpl">E</a>&gt;&nbsp;infoIn,
- <a href="../../api/client/immersive/BuiltImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn,
+ <a href="../../api/client/immersive/BuiltBlockBasedImmersiveRenderState.html" title="interface in com.hammy275.immersivemc.api.client.immersive">BuiltBlockBasedImmersiveRenderState</a>&lt;<a href="#type-param-ER" title="type parameter in BuiltBlockBasedImmersiveImpl">ER</a>&gt;&nbsp;renderStateIn,
  float&nbsp;partialTicks)</span></div>
 <div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../api/client/immersive/Immersive.html#extractRenderState(I,R,float)">Immersive</a></code></span></div>
 <div class="block">Extract render state from the info into the provided render state object.

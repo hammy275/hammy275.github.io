@@ -49,9 +49,9 @@ export default defineConfig({
 					],
 					collapsed: true
 				},
-				{label: "FAQ", slug: "root/faq"},
-				{label: "Inter-Mod Compatibility", slug: "root/mod_compat"},
-				{label: "Contributing", slug: "root/contributing"},
+				"faq",
+				"mod_compat",
+				"contributing",
 				{
 					label: "The ImmersiveMC API",
 					items: [
