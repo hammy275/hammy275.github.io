@@ -16,7 +16,11 @@ A: Simply press your break block button while pointing at the chest/barrel/shulk
 
 A: If you're not in VR, the easiest way to access ImmersiveMC's settings is to join a world, then click the settings key for ImmersiveMC on your keyboard. By default, this is the "," (comma) key.
 
-If you're in VR, the easiest way to access ImmersiveMC's settings is to map the "ImmersiveMC Settings" button to your radial menu. You can add this button by going to Options -> VR Settings -> Radial Menu, then clicking the button you want to replace, then scrolling and clicking "ImmersiveMC Settings".  
+If you're in VR, the easiest way to access ImmersiveMC's settings is to map the "ImmersiveMC Settings" button to your radial menu. You can add this button by going to Options -> VR Settings -> Radial Menu, then clicking the button you want to replace, then scrolling and clicking "ImmersiveMC Settings".
+
+Alternatively, if you're using Forge or NeoForge or have a mod such as ModMenu installed, you can access ImmersiveMC's settings from the "Mods" menu the same as you would any other mod's configuration.
+
+Lastly, if you prefer editing config files directly or if you're running a server, you can find ImmersiveMC's config files in your `config` folder. `immersive_mc-client.json` holds settings that only apply to you, while `immersive_mc-server.json` holds settings that apply to everyone, including you.
 
 ### Q: Placing one item at a time is so slow! Can I place more than one item at a time?
 
@@ -37,6 +41,10 @@ A: Those without ImmersiveMC can join servers with ImmersiveMC! However, they wo
 ### Q: Can I join a server without ImmersiveMC with ImmersiveMC?
 
 A: Yes! However, you won't be able to use any ImmersiveMC features. It would be as if you never had ImmersiveMC installed in the first place.
+
+### Q: Can I use ImmersiveMC without Vivecraft?
+
+A: Yes, though you will not have access to any of ImmersiveMC's VR-only features, of course!
 
 ### Q: Can I use ImmersiveMC on a server without ImmersiveMC installed? On Minecraft Realms?
 
@@ -62,7 +70,7 @@ A: This is an intended feature to allow users to access the UI for blocks that a
 
 ### Q: Help! My game immediately crashes when I launch it!
 
-A: Please ensure you have the Fabric versions of all of ImmersiveMC's requirements installed. Additionally, make sure you're downloading the mods for the correct Minecraft version.
+A: Make sure you're downloading the mods for the correct Minecraft version and modloader! If you need further help, open a thread in #support in [ImmersiveMC's Discord server](https://discord.gg/gZP6xjMtgW).
 
 ### Q: Help! The textures for Immersives are all weird and glitchy!
 
@@ -70,4 +78,4 @@ A: Odds are, you may have OptiFine shaders on (even just the internal ones). You
 
 ### Q: Some VR-only functionality isn't working!
 
-A: The server may not have Vivecraft 1.3.3 or later installed, be sure to install it!
+A: You and/or the server may not have Vivecraft 1.3.3 or later installed, be sure to install it!
