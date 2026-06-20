@@ -6,6 +6,24 @@ This page details the vast majority of changes you'll need to make to migrate be
 
 The main thing not covered are changes in package location (your IDEs auto-import can help with that), though renames will still be mentioned.
 
+### Side Note: ImmersiveMC's API Versioning
+
+ImmersiveMC's API versions follow [semantic versioning](https://semver.org/), though with no patch version number. This means that increments to the first number (such as 1.x -> 2.0) denote backwards-incompatible changes, while increments to the second number (such as x.1 -> x.2) denote backwards-compatible changes that add new API functionality. Note that the following are the only changes that would result in a major version bump, noting that this only applies to classes, functions, etc. in the API:
+
+- A class has its name changed, its package changed, or its type parameters changed.
+- A class' Javadoc is updated for a reason other than correcting spelling mistakes or grammatical errors. In other words, if the class is documented to behave differently than before.
+- A function has its named changed, changes which class it is contained in, or its type parameters changed.
+- A function has its return type or parameters changed.
+- A function has its Javadoc updated for a reason other than correcting spelling mistakes or grammatical errors. In other words, if the function is documented to behave differently than before.
+
+Notably, the API may change runtime behavior so long as the Javadoc would not need to be updated to maintain accuracy. Examples of changes that would NOT necessitate a major API version bump include:
+
+- A method that is not documented to throw a `NullPointerException` but does can silently change to no longer to.
+- A method that does not throw a `NullPointerException` can begin to throw a `NullPointerException` when provided with invalid arguments.
+    - Note that if valid arguments would cause a `NullPointerException` to be thrown, this would require an update to the Javadoc and thus would cause a major API version bump.
+
+In summary a major version bump occurs if some class or function has different *compile-time* behavior than before or has different *documented* behavior than before. Non-documented runtime behavior may change without notice.
+
 ## 1.0 (ImmersiveMC v1.5.0-beta2) to 2.0 (ImmersiveMC v1.5.0)
 
 ### Additions
@@ -80,3 +98,4 @@ The main thing not covered are changes in package location (your IDEs auto-impor
     - `BuiltImmersive` to `BuiltBlockBasedImmersive`.
     - `BuiltImmersiveRenderState` to `BuiltBlockBasedImmersiveRenderState`.
 - `Immersive`, `ImmersiveInfo`, and `ImmersiveHandler` are now sealed interfaces containing some methods from their pre-5.0 counterparts. The rest of the old methods can be found in `BlockBasedImmersive`, `BlockBasedImmersiveInfo`, and `BlockBasedImmersiveHandler` respectively.
+- `handleHitboxInteract()` now no longer adjusts the cooldown depending on whether the player was in VR or not. There is no need to adjust it yourself either, as cooldown times should stay consistent between VR and non-VR play.

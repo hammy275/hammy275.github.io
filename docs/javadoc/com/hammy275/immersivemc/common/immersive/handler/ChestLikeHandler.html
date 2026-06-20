@@ -78,7 +78,7 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<h1 title="Class ChestLikeHandler" class="title">Class ChestLikeHandler&lt;<span id="type-param-S">S extends <a href="../storage/network/impl/ListOfItemsStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.network.impl">ListOfItemsStorage</a></span>&gt;</h1>
+<h1 title="Class ChestLikeHandler" class="title">Class ChestLikeHandler&lt;<span id="type-param-S">S extends <a href="../../../api/common/immersive/NetworkStorage.html" title="interface in com.hammy275.immersivemc.api.common.immersive">NetworkStorage</a></span>&gt;</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
 <div class="inheritance"><a href="ContainerHandler.html" title="class in com.hammy275.immersivemc.common.immersive.handler">com.hammy275.immersivemc.common.immersive.handler.ContainerHandler</a>&lt;S&gt;
@@ -96,7 +96,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">ChestLikeHandler&lt;S extends <a href="../storage/network/impl/ListOfItemsStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.network.impl">ListOfItemsStorage</a>&gt;</span>
+<div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">ChestLikeHandler&lt;S extends <a href="../../../api/common/immersive/NetworkStorage.html" title="interface in com.hammy275.immersivemc.api.common.immersive">NetworkStorage</a>&gt;</span>
 <span class="extends-implements">extends <a href="ContainerHandler.html" title="class in com.hammy275.immersivemc.common.immersive.handler">ContainerHandler</a>&lt;S&gt;</span></div>
 </div>
 </section>
@@ -263,9 +263,9 @@ loadScripts(document, 'script');</script>
 Dirtiness is addressed every tick, so for every tick, you should clear ALL flags used for dirtiness.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../../../api/common/immersive/BlockBasedImmersiveHandler.html#isDirtyForClientSync(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos)">isDirtyForClientSync</a></code>&nbsp;in interface&nbsp;<code><a href="../../../api/common/immersive/BlockBasedImmersiveHandler.html" title="interface in com.hammy275.immersivemc.api.common.immersive">BlockBasedImmersiveHandler</a>&lt;<a href="#type-param-S" title="type parameter in ChestLikeHandler">S</a> extends <a href="../storage/network/impl/ListOfItemsStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.network.impl">ListOfItemsStorage</a>&gt;</code></dd>
+<dd><code><a href="../../../api/common/immersive/BlockBasedImmersiveHandler.html#isDirtyForClientSync(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos)">isDirtyForClientSync</a></code>&nbsp;in interface&nbsp;<code><a href="../../../api/common/immersive/BlockBasedImmersiveHandler.html" title="interface in com.hammy275.immersivemc.api.common.immersive">BlockBasedImmersiveHandler</a>&lt;<a href="#type-param-S" title="type parameter in ChestLikeHandler">S</a> extends <a href="../../../api/common/immersive/NetworkStorage.html" title="interface in com.hammy275.immersivemc.api.common.immersive">NetworkStorage</a>&gt;</code></dd>
 <dt>Overrides:</dt>
-<dd><code><a href="ContainerHandler.html#isDirtyForClientSync(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos)">isDirtyForClientSync</a></code>&nbsp;in class&nbsp;<code><a href="ContainerHandler.html" title="class in com.hammy275.immersivemc.common.immersive.handler">ContainerHandler</a>&lt;<a href="#type-param-S" title="type parameter in ChestLikeHandler">S</a> extends <a href="../storage/network/impl/ListOfItemsStorage.html" title="class in com.hammy275.immersivemc.common.immersive.storage.network.impl">ListOfItemsStorage</a>&gt;</code></dd>
+<dd><code><a href="ContainerHandler.html#isDirtyForClientSync(net.minecraft.server.level.ServerPlayer,net.minecraft.core.BlockPos)">isDirtyForClientSync</a></code>&nbsp;in class&nbsp;<code><a href="ContainerHandler.html" title="class in com.hammy275.immersivemc.common.immersive.handler">ContainerHandler</a>&lt;<a href="#type-param-S" title="type parameter in ChestLikeHandler">S</a> extends <a href="../../../api/common/immersive/NetworkStorage.html" title="interface in com.hammy275.immersivemc.api.common.immersive">NetworkStorage</a>&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>tracker</code> - Player to potentially send new data to.</dd>
 <dd><code>pos</code> - Position of block to check.</dd>

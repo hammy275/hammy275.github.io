@@ -72,6 +72,7 @@ export default defineConfig({
 							],
 							collapsed: true
 						},
+						"api/immersive_interface",
 						"api/everything_else",
 						{"label": "Javadocs", "link": "/javadoc"},
 						"api/migration_guide"
