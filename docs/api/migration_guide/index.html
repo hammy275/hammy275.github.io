@@ -83,8 +83,8 @@
 </ul>
 <p>Notably, the API may change runtime behavior so long as the Javadoc would not need to be updated to maintain accuracy. Examples of changes that would NOT necessitate a major API version bump include:</p>
 <ul>
-<li>A method that is not documented to throw a <code dir="auto">NullPointerException</code> but does can silently change to no longer to.</li>
-<li>A method that does not throw a <code dir="auto">NullPointerException</code> can begin to throw a <code dir="auto">NullPointerException</code> when provided with invalid arguments.
+<li>A method that is not documented to throw a <code dir="auto">NullPointerException</code> but does with valid arguments can silently change to no longer do so, as this is a bug fix.</li>
+<li>A method that does not throw a <code dir="auto">NullPointerException</code> can begin to throw a <code dir="auto">NullPointerException</code> when provided with invalid arguments, as the effects of using invalid arguments are not covered by the API.
 <ul>
 <li>Note that if valid arguments would cause a <code dir="auto">NullPointerException</code> to be thrown, this would require an update to the Javadoc and thus would cause a major API version bump.</li>
 </ul>

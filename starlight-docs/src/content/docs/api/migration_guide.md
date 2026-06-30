@@ -18,8 +18,8 @@ ImmersiveMC's API versions follow [semantic versioning](https://semver.org/), th
 
 Notably, the API may change runtime behavior so long as the Javadoc would not need to be updated to maintain accuracy. Examples of changes that would NOT necessitate a major API version bump include:
 
-- A method that is not documented to throw a `NullPointerException` but does can silently change to no longer to.
-- A method that does not throw a `NullPointerException` can begin to throw a `NullPointerException` when provided with invalid arguments.
+- A method that is not documented to throw a `NullPointerException` but does with valid arguments can silently change to no longer do so, as this is a bug fix.
+- A method that does not throw a `NullPointerException` can begin to throw a `NullPointerException` when provided with invalid arguments, as the effects of using invalid arguments are not covered by the API.
     - Note that if valid arguments would cause a `NullPointerException` to be thrown, this would require an update to the Javadoc and thus would cause a major API version bump.
 
 In summary a major version bump occurs if some class or function has different *compile-time* behavior than before or has different *documented* behavior than before. Non-documented runtime behavior may change without notice.
