@@ -4,19 +4,20 @@ services:
       context: .
     volumes:
       - ./docs:/build
-      - ./jekyll-docs:/docs-copy:ro
+      - ./starlight-docs:/docs-copy:ro
     user: root
     command: bash -c "
-      cp -r /docs-copy /docs &&
+      mkdir /docs/ &&
+      rsync -av --exclude="node_modules/" --exclude="dist/" --exclude=".vscode/" --exclude=".astro/" /docs-copy/ /docs/ &&
       cd /docs &&
-      bundle install &&
-      bundle exec jekyll build &&
+      npm install &&
+      npm run build &&
       cd /immersive-mc && 
       git pull &&
       ./gradlew javadoc &&
       cd / &&
       rm -rf /build/* &&
-      cp -r /docs/_site/* /build &&
+      cp -r /docs/dist/* /build &&
       cp -r /immersive-mc/common/build/docs/javadoc /build/javadoc &&
       touch /build/.nojekyll &&
       echo immersivemcwiki.hammy275.com > /build/CNAME && 
